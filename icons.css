@@ -1,0 +1,134 @@
+/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 11/03/2021 17:37
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("Flaticon.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-size: 20px;
+  font-style: normal;
+  margin-left: 20px;
+}
+
+.flaticon-invoice:before {
+  content: "\f100";
+}
+.flaticon-discount:before {
+  content: "\f101";
+}
+.flaticon-info:before {
+  content: "\f102";
+}
+.flaticon-filter:before {
+  content: "\f103";
+}
+.flaticon-coupon:before {
+  content: "\f104";
+}
+.flaticon-shopping-basket:before {
+  content: "\f105";
+}
+.flaticon-bar-code:before {
+  content: "\f106";
+}
+.flaticon-shopping-cart:before {
+  content: "\f107";
+}
+.flaticon-coin:before {
+  content: "\f108";
+}
+.flaticon-libra:before {
+  content: "\f109";
+}
+.flaticon-cashbox:before {
+  content: "\f10a";
+}
+.flaticon-shopping-bag:before {
+  content: "\f10b";
+}
+.flaticon-hanger:before {
+  content: "\f10c";
+}
+.flaticon-wallet:before {
+  content: "\f10d";
+}
+.flaticon-avatar:before {
+  content: "\f10e";
+}
+.flaticon-purse:before {
+  content: "\f10f";
+}
+.flaticon-open:before {
+  content: "\f110";
+}
+.flaticon-gift:before {
+  content: "\f111";
+}
+.flaticon-telephone:before {
+  content: "\f112";
+}
+.flaticon-box:before {
+  content: "\f113";
+}
+.flaticon-speech-bubble:before {
+  content: "\f114";
+}
+.flaticon-tag:before {
+  content: "\f115";
+}
+.flaticon-scooter:before {
+  content: "\f116";
+}
+.flaticon-airplane:before {
+  content: "\f117";
+}
+.flaticon-check:before {
+  content: "\f118";
+}
+.flaticon-24-hours:before {
+  content: "\f119";
+}
+.flaticon-wallet-1:before {
+  content: "\f11a";
+}
+.flaticon-search:before {
+  content: "\f11b";
+}
+.flaticon-shop:before {
+  content: "\f11c";
+}
+.flaticon-placeholder:before {
+  content: "\f11d";
+}
+.flaticon-map:before {
+  content: "\f11e";
+}
+.flaticon-credit-card:before {
+  content: "\f11f";
+}
+.flaticon-machine:before {
+  content: "\f120";
+}
+.flaticon-monitor:before {
+  content: "\f121";
+}
+.flaticon-cash-machine:before {
+  content: "\f122";
+}

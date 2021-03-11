@@ -5,3 +5,40 @@ h1 {
 h2 {
   font-family: "Rubik", sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
+
+.flaticon-shopping-cart {
+  color: red;
+}
+
+.searchbox-whole {
+  display: flex;
+  float: right;
+  align-items: center;
+  height: 31px;
+  width: 422px;
+  border-radius: 4px;
+  background: rgba(43, 43, 43, 0.16);
+}
+
+.searchbox-input {
+  margin-right: auto;
+  padding-left: 20px;
+  background: none;
+  border: none;
+  height: 31px;
+  width: 422px;
+}
+
+.flaticon-search {
+  margin-left: auto;
+  color: #2b2b2b;
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+input.searchbox-input:focus {
+  outline: none;
