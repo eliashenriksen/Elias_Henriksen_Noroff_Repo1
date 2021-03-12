@@ -1,3 +1,5 @@
+/*border: 4px solid green;*/
+
 h1 {
   font-family: "Open Sans", sans-serif;
 }
@@ -10,12 +12,16 @@ a {
   text-decoration: none;
 }
 
-header {
+.headerflexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: right;
   align-items: center;
-  justify-content: middle;
-  width: 1920px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  margin-top: 20px;
+  margin-left: 149px;
   height: 65px;
-  background: red;
+  box-shadow: 0px 2px 6px #00000045;
 }
 
 main {
@@ -28,7 +34,11 @@ main {
   font-size: 27px;
   padding-right: 108px;
   padding-left: 27px;
-  height: 100%;
+  margin: 0;
+  overflow: 0;
+  text-align: center;
+  margin-left: auto;
+  flex-basis: content;
 }
 
 .searchbox-input {
@@ -52,25 +62,39 @@ main {
 .searchbox-whole {
   display: flex;
   align-items: center;
+  margin: 0;
   height: 31px;
   width: 422px;
   border-radius: 4px;
   background: rgba(43, 43, 43, 0.16);
+  flex: 3 1 auto;
 }
 
 input.searchbox-input:focus {
   outline: none;
 }
 
-nav li {
-  display: inline;
+nav ul {
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
+  padding-right: 500px;
+  padding-top: 0;
+  padding-bottom: 0;
+  flex: 3 1 auto;
 }
 
-nav a {
-  padding-left: 48px;
-  padding-right: 48px;
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 20px;
 }
 
 .logo-home {
+  display: inline-block;
+  margin: 0;
   position: fixed;
+  margin-top: -7px;
+  height: auto;
 }
