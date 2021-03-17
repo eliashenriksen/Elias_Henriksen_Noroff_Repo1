@@ -108,12 +108,10 @@ input.searchbox-input:focus {
 }
 
 
-.logo-home {
+.home-box {
   display: inline-block;
   position: fixed;
   margin: 0px;
   height: auto;
   /*outline: solid red;*/
 }
-
-@media 
