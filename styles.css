@@ -24,24 +24,29 @@ a {
   align-items: center;
 }
 
+/* Problem is that the nav only has 1 flex item */
 nav {
   display: flex;
-  align-items:center;
+  align-items: center;
+  justify-content: flex-start;
   height: 65px;
-  outline: solid red;
-  flex: 6;
+  /*outline: solid red;*/
+  flex: 8;
 }
 
 nav ul {
-  outline: solid rgb(4, 248, 207);
+  /*outline: solid rgb(4, 248, 207);*/
   flex: 1;
+  margin: 0px;
+  padding: 0px;
 }
 
 nav li {
-  display: inline;
+  display: inline-block;
+  float: left;
   padding: 20px 48px 20px 48px;
   cursor: pointer;
-  outline: solid rgb(234, 0, 255);
+  /*outline: solid rgb(234, 0, 255);*/
 }
 
 nav li:hover {
@@ -77,7 +82,7 @@ main {
   background: rgba(43, 43, 43, 0.16);
   /*outline: solid rgb(0, 255, 0); */
   position: relative;
-  flex: 4;
+  flex: 3;
 }
 
 .searchbox-input {
@@ -110,3 +115,5 @@ input.searchbox-input:focus {
   height: auto;
   /*outline: solid red;*/
 }
+
+@media 
