@@ -15,20 +15,21 @@ a {
 .headerflexbox {
   display: flex;
   background: #ffffff;
-  margin-left: 149px;
+  margin-left: 141px;
   padding-right: 0px;
   margin-right: 0px;
   height: 65px;
   max-width: 100%;
   box-shadow: 0px 2px 6px #00000045;
   align-items: center;
+  /*outline: solid red;*/
 }
 
 /* Problem is that the nav only has 1 flex item */
 nav {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  margin-right: 10px;
   height: 65px;
   /*outline: solid red;*/
   flex: 8;
@@ -51,17 +52,24 @@ nav li {
 
 nav li:hover {
   background: #0C326A;
-  outline: solid #0C326A;
+  box-shadow: inset 0px 2px 6px #00000029;
+  outline: 3px solid #0C326A;
 }
 
-main {
-  height: 2000px;
+nav li:hover a {
+  color: #ffffff;
+  text-shadow: 0px 2px 6px #00000029;
+}
+
+nav a {
+  font-family: "Rubik", sans-serif;
+  color: #2b2b2b;
 }
 
 .nav-icons-rightside {
   color: #2b2b2b;
   font-size: 27px;
-  padding-right: 108px;
+  padding-right: 88px;
   padding-left: 27px;
   /*outline: solid red;*/
   flex: 1;
@@ -70,6 +78,10 @@ main {
 .flaticon-avatar, .flaticon-shopping-cart{
   float: right;
   padding: 10px;
+}
+
+.flaticon-avatar:hover, .flaticon-shopping-cart:hover {
+  cursor: pointer;
 }
 
 .searchbox-whole {
@@ -109,9 +121,31 @@ input.searchbox-input:focus {
 
 
 .home-box {
-  display: inline-block;
+  display: flex;
   position: fixed;
+  align-items: center;
+  justify-content: center;
   margin: 0px;
-  height: auto;
+  padding: 0px;
+  height: 65px;
+  width: 140px;
+  background: #0C326A;
+  box-shadow: 0px 2px 6px #00000029;
   /*outline: solid red;*/
+}
+
+.rainydayslogo {
+  width: 80%;
+  height: 80%;
+  margin: 0%;
+  padding: 0%;
+}
+
+main {
+  height: 2000px;
+}
+
+footer {
+  background: #2b2b2b;
+  height: 400px;
 }
