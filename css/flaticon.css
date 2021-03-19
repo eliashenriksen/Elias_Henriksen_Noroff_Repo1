@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?bab1601aac6e5c97cb2f70b1d5797a40") format("truetype"),
+url("./flaticon.woff?bab1601aac6e5c97cb2f70b1d5797a40") format("woff"),
+url("./flaticon.woff2?bab1601aac6e5c97cb2f70b1d5797a40") format("woff2"),
+url("./flaticon.eot?bab1601aac6e5c97cb2f70b1d5797a40#iefix") format("embedded-opentype"),
+url("./flaticon.svg?bab1601aac6e5c97cb2f70b1d5797a40#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-24-hours:before {
+    content: "\f101";
+}
+.flaticon-airplane:before {
+    content: "\f102";
+}
+.flaticon-avatar:before {
+    content: "\f103";
+}
+.flaticon-bar-code:before {
+    content: "\f104";
+}
+.flaticon-box:before {
+    content: "\f105";
+}
+.flaticon-cash-machine:before {
+    content: "\f106";
+}
+.flaticon-cashbox:before {
+    content: "\f107";
+}
+.flaticon-check:before {
+    content: "\f108";
+}
+.flaticon-coin:before {
+    content: "\f109";
+}
+.flaticon-coupon:before {
+    content: "\f10a";
+}
+.flaticon-credit-card:before {
+    content: "\f10b";
+}
+.flaticon-discount:before {
+    content: "\f10c";
+}
+.flaticon-filter:before {
+    content: "\f10d";
+}
+.flaticon-gift:before {
+    content: "\f10e";
+}
+.flaticon-hanger:before {
+    content: "\f10f";
+}
+.flaticon-info:before {
+    content: "\f110";
+}
+.flaticon-invoice:before {
+    content: "\f111";
+}
+.flaticon-libra:before {
+    content: "\f112";
+}
+.flaticon-machine:before {
+    content: "\f113";
+}
+.flaticon-map:before {
+    content: "\f114";
+}
+.flaticon-monitor:before {
+    content: "\f115";
+}
+.flaticon-open:before {
+    content: "\f116";
+}
+.flaticon-placeholder:before {
+    content: "\f117";
+}
+.flaticon-purse:before {
+    content: "\f118";
+}
+.flaticon-scooter:before {
+    content: "\f119";
+}
+.flaticon-search:before {
+    content: "\f11a";
+}
+.flaticon-shop:before {
+    content: "\f11b";
+}
+.flaticon-shopping-bag:before {
+    content: "\f11c";
+}
+.flaticon-shopping-basket:before {
+    content: "\f11d";
+}
+.flaticon-shopping-cart:before {
+    content: "\f11e";
+}
+.flaticon-speech-bubble:before {
+    content: "\f11f";
+}
+.flaticon-tag:before {
+    content: "\f120";
+}
+.flaticon-telephone:before {
+    content: "\f121";
+}
+.flaticon-wallet-1:before {
+    content: "\f122";
+}
+.flaticon-wallet:before {
+    content: "\f123";
+}
