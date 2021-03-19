@@ -27,26 +27,19 @@ a {
   text-decoration: none;
 }
 
-.cta-button {
-  font-family: "Rubik", sans-serif;
-  text-transform: uppercase;
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  font-weight: 400;
-  color: #ffffff;
-  background: #68C46F;
-  box-shadow: 0px 2px 6px #00000029;
-  border-radius: 0.563rem;
-  padding-top: 0.813rem;
-  padding-bottom: 0.813rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  border: none;
-  cursor: pointer;
+body {
+  display: grid;
+  gap: 0;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
+  min-height: 100vh;
 }
 
-.cta-button:hover {
-  color: #0C326A;
+header {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 1;
 }
 
 .headerflexbox {
@@ -179,14 +172,84 @@ input.searchbox-input:focus {
 }
 
 main {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto;
-  height: 2000px;
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 2;
   background: orange;
+  margin: 8.75rem;
+}
+
+.homepage-section1 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  background: #EBEBEB;
+}
+
+.homepage-section1-part1 {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: left;
+  flex: 2;
+  outline: solid rgb(234, 0, 255);
+}
+
+
+.homepage-section1-part1 a {
+  margin-top: 3rem;
+  align-self: center;
+  outline: solid rgb(0, 255, 115);
+}
+
+.homepage-section1-part2 {
+  display: inline-block;
+  flex: 3;
+  outline: solid rgb(0, 255, 115);
+}
+
+.homepage-section1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+main img {
+  max-width: 1000px;
+  height: auto;
+}
+
+.cta-button {
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+  color: #ffffff;
+  background: #68C46F;
+  box-shadow: 0px 2px 6px #00000029;
+  border-radius: 0.563rem;
+  padding-top: 0.813rem;
+  padding-bottom: 0.813rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  color: #0C326A;
 }
 
 footer {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 3;
   color: #ffffff;
   display: flex;
   flex-direction: column;
