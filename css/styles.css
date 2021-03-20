@@ -214,7 +214,7 @@ main {
   object-fit: cover;
 }
 
-.homepage-content1-part1of3 {
+.homepage-content1-part1ofx {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -228,13 +228,13 @@ main {
   background: #EBEBEB;
 }
 
-.homepage-content1-part1of3 a, .homepage-content2-part1of2 a {
+.homepage-content1-part1ofx a, .homepage-content2-part1ofx a {
   margin-top: 3rem;
   align-self: flex-start;
   /* outline: solid rgb(255, 81, 0); */
 }
 
-.homepage-content1-part2of3 {
+.homepage-content1-part2ofx {
   grid-column-start: 3;
   grid-column-end: 6;
   grid-row-start: 1;
@@ -244,7 +244,7 @@ main {
   /* outline: solid rgb(0, 255, 115); */
 }
 
-.homepage-content1-part3of3 {
+.homepage-content1-part3ofx {
   grid-column-start: 3;
   grid-column-end: 6;
   grid-row-start: 2;
@@ -253,11 +253,11 @@ main {
   /* outline: solid rgb(255, 102, 0); */
 }
 
-.homepage-content1-part3of3:nth-child(n){
+.homepage-content1-part3ofx:nth-child(n){
   margin-top: -8.75rem;
 }
 
-.homepage-content2-part1of2 {
+.homepage-content2-part1ofx {
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -269,17 +269,17 @@ main {
   /* outline: solid rgb(255, 102, 0); */
 }
 
-.homepage-content2-part1of2 h2 {
+.homepage-content2-part1ofx h2 {
 }
 
-.homepage-content2-part2of2 {
+.homepage-content2-part2ofx {
   grid-column-start: 2;
   grid-column-end: 6;
   grid-row-start: 3;
   grid-row-end: 4;
 }
 
-.homepage-content3-part1of4 {
+.homepage-content3-part1ofx {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -290,7 +290,7 @@ main {
   grid-column-end: 6;
 }
 
-.homepage-content3-part2of4 {
+.homepage-content3-part2ofx {
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -315,11 +315,11 @@ main {
   width: 100%;
 }
 
-.homepage-content3-part2of4:nth-child(n){
+.homepage-content3-part2ofx:nth-child(n){
   margin-top: -8rem;
 }
 
-.homepage-content3-part3of4 {
+.homepage-content3-part3ofx {
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -350,11 +350,11 @@ main {
   font-weight: bold;
 }
 
-.homepage-content3-part3of4:nth-child(n){
+.homepage-content3-part3ofx:nth-child(n){
   margin-top: -8.75rem;
 }
 
-.homepage-content3-part4of4 {
+.homepage-content3-part4ofx {
   grid-row-start: 7;
   grid-row-end: 8;
   grid-column-start: 5;
@@ -365,9 +365,50 @@ main {
   /* outline: solid rgb(255, 102, 0); */
 }
 
-.homepage-content3-part4of4:nth-child(n){
+.homepage-content3-part4ofx:nth-child(n){
   margin-top: -10rem;
 }
+
+.homepage-content3-part5ofx {
+  display: flex;
+  justify-content: center;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  /* outline: solid rgb(255, 102, 0); */
+}
+
+.homepage-content3-part5ofx:nth-child(n){
+  margin-top: -6rem;
+}
+
+/* Will have to redo these arrows with symbols to have proper hover functionality */
+.arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-right: 2.25rem solid transparent;
+  border-left: 2.25rem solid transparent;
+  border-bottom: 2.25rem solid #0C326A;
+  filter:drop-shadow(0px 2px 6px #00000045);
+}
+
+.arrow:hover {
+  cursor: pointer;
+  border-bottom: 2.25rem solid #ffffff;
+}
+
+.left {
+  transform: rotate(-90deg);
+}
+
+
+.right {
+  transform: rotate(90deg);
+}
+
+
 /* ////////////// HOMEPAGE CONTENT END/////////////////////////// */
 
 
