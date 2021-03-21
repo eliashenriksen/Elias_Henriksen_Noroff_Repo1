@@ -1,6 +1,6 @@
 p {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   color: #2b2b2b;
 }
 
@@ -11,10 +11,6 @@ h4,
 h5 {
   font-family: "Rubik", sans-serif;
   color: #2b2b2b;
-}
-
-.normal-header {
-  font-weight: normal;
 }
 
 h1 {
@@ -32,8 +28,22 @@ h3 {
   line-height: 1.75rem;
 }
 
+h4 {
+  font-size: 1.25rem;
+}
+
 a {
   text-decoration: none;
+}
+
+ul {
+  font-size: 0.875rem;
+  list-style-type: none;
+  padding: 0;
+}
+
+.normal-header {
+  font-weight: normal;
 }
 
 .vertical-middle {
@@ -50,7 +60,14 @@ a {
   color: #68c46f;
   cursor: pointer;
 }
-)
+
+.nomargins {
+  margin: 0px;
+}
+
+.nopadding {
+  padding: 0px;
+}
 
 body {
   display: grid;
@@ -91,6 +108,7 @@ nav {
 
 nav ul {
   /*outline: solid rgb(4, 248, 207);*/
+  font-size: 1.125rem;
   flex: 1;
   margin: 0px;
   padding: 0px;
@@ -99,7 +117,7 @@ nav ul {
 nav li {
   display: inline-block;
   float: left;
-  padding: 20px 48px 20px 48px;
+  padding: 21px 48px 21px 48px;
   cursor: pointer;
   /*outline: solid rgb(234, 0, 255);*/
 }
@@ -107,7 +125,7 @@ nav li {
 nav li:hover {
   background: #0c326a;
   box-shadow: inset 0px 2px 6px #00000029;
-  outline: 3px solid #0c326a;
+  outline: solid 1px #0c326a;
 }
 
 nav li:hover a {
@@ -274,9 +292,6 @@ main {
   /* outline: solid rgb(255, 102, 0); */
 }
 
-.homepage-content2-part1ofx h2 {
-}
-
 .homepage-content2-part2ofx {
   grid-column-start: 2;
   grid-column-end: 6;
@@ -411,6 +426,43 @@ main {
 .right {
   transform: rotate(90deg);
 }
+
+.homepage-content4-part1ofx {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 8;
+  grid-row-end: 10;
+  display: inline-block;
+}
+
+.homepage-content4-part2ofx {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+
+.homepage-content4-part2ofx:nth-child(n) {
+  margin-left: 2rem;
+}
+
+.homepage-content4-part3ofx {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 9;
+  grid-row-end: 10;
+}
+
+.homepage-content4-part3ofx:nth-child(n) {
+  margin-left: 2rem;
+  margin-top: -8.75rem;
+}
+
+/*.homepage-content4-part3ofx ul {
+  font-size: 0.875rem;
+  list-style-type: none;
+  padding: 0;
+}*/
 
 /* ////////////// HOMEPAGE CONTENT END/////////////////////////// */
 
