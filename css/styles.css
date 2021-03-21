@@ -574,3 +574,17 @@ footer h4 {
   /* outline: solid rgb(0, 255, 42); */
   margin-bottom: 50px;
 }
+
+@media only screen and (min-width: 1440px) {
+  nav li {
+    padding: 21px 40px 21px 40px;
+    /*outline: solid rgb(234, 0, 255);*/
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  nav li {
+    padding: 21px 35px 21px 35px;
+    /*outline: solid rgb(234, 0, 255);*/
+  }
+}
