@@ -11,6 +11,7 @@
     <link href="css/flaticon.css" type="text/css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet"> 
     <link rel="icon" href="images/rainyfavicon.png">
+    <script src="https://kit.fontawesome.com/ea0c31a3df.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -19,26 +20,26 @@
       <img src="images/rainydayslogo.png" class="rainydayslogo" alt="Rainydays logo / Home">
     </div>
     </a>
+    <label class="hamburger" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+    <input type="checkbox" id="hamburger-menu">
     <div class="headerflexbox">
       <nav>
         <ul class="main-nav">
-          <li><a href="###">Men</a> </li>
-          <li><a href="###">Women</a> </li>
-          <li><a href="###">Activities</a> </li>
-          <li><a href="###">Collections</a> </li>
-          <li><a href="###">Deals</a> </li>
+          <li><div class="navli"><a href="###">Men</a></div></li>
+          <li><div class="navli"><a href="###">Women</a></div></li>
+          <li><div class="navli"><a href="###">Activities</a></div></li>
+          <li><div class="navli"><a href="###">Collections</a></div></li>
+          <li><div class="navli"><a href="###">Deals</a></div></li>
         </ul>
       </nav>
-      <section class="searchbox-whole">
+      <div class="searchbox-whole">
         <input class="searchbox-input" type="text" name="search" placeholder="Type to search">
-        <div class="searchiconwrapper">
-          <i class="flaticon-search" href="##" aria-label="Search"></i>
-        </div>
-      </section>
-      <section class="nav-icons-rightside">
+        <i class="flaticon-search" href="##" aria-label="Search"></i>
+      </div>
+      <div class="nav-icons-rightside">
         <i class="flaticon-shopping-cart" aria-label="My Cart"></i>
         <i class="flaticon-avatar" aria-label="My Profile"></i>
-      </section>
+      </div>
     </div>
   </header>
   <main>
@@ -60,22 +61,22 @@
       <a href="###" class="cta-button">learn more ></a>
     </div>
     <div class="homepage-content2-part2ofx">
-      <img src="images/homeimage3.jpg" class="homepage-images" alt="Picture of snowy cabin">
+      <img src="images/homeimage3.jpg" class="homepage-images" id="hidden" alt="Picture of snowy cabin">
     </div>
     <div class="homepage-content3-part1ofx">
       <h2>Check out some popular picks!</h2>
     </div>
     <div class="homepage-content3-part2ofx">
-      <div class="productblock-picture">
+      <div class="productblock-picture" id="hidden">
         <img src="images/productimages/productimage1.jpg" alt="picture of Rainydays 3 Layer Jacket Men">
       </div>
-      <div class="productblock-picture">
+      <div class="productblock-picture" id="hidden">
         <img src="images/productimages/productimage2.jpg" alt="picture of Rainydays Niyama Ski Jacket Men´s">
       </div>
-      <div class="productblock-picture">
+      <div class="productblock-picture" id="hidden">
         <img src="images/productimages/productimage3.jpg" alt="picture of Rainydays Niyama Ski Jacket Men´s">
       </div>
-      <div class="productblock-picture">
+      <div class="productblock-picture" id="hidden">
         <img src="images/productimages/productimage4.jpg" alt="picture of Rainydays 3 Layer Jacket Men">
       </div>
       <div class="productblock-picture">
@@ -83,19 +84,19 @@
       </div>
     </div>
     <div class="homepage-content3-part3ofx">
-      <div class="productblock-title">
+      <div class="productblock-title" id="hidden">
         <h3>Rainydays 3 Layer Jacket Men</h3>
         <h3 id="productblock-price">1602,-</h3>
       </div>
-      <div class="productblock-title">
+      <div class="productblock-title" id="hidden">
         <h3>Rainydays Niyama Ski Jacket Men´s</h3>
         <h3 id="productblock-price">839,-</h3>
       </div>
-      <div class="productblock-title">
+      <div class="productblock-title" id="hidden">
         <h3>Rainydays Niyama Ski Jacket Men´s</h3>
         <h3 id="productblock-price">839,-</h3>
       </div>
-      <div class="productblock-title">
+      <div class="productblock-title" id="hidden">
         <h3>Rainydays 3 Layer Jacket Men</h3>
         <h3 id="productblock-price">1602,-</h3>
       </div>
@@ -123,7 +124,7 @@
      <p>Roc Spire Jacket from Rainydays is an important 3L GORE-TEX shell jacket, built for tough mountain climbers! This
     full-fledged, all-season jacket has clean lines and light weight, but still durable for long days in the mountains.
     Men's sizes.</p>
-    <ul>
+    <ul id="hidden">
       <li>GORE-TEX 3-layer, 100% polyamide, lightweight 30D ripstop surface</li>
       <li>3-way adjustable climbing helmet compatible hood with laminated and thread-reinforced top</li>
       <li>RECCO® reflector in the hood tray for searchability</li>
@@ -150,7 +151,7 @@
       <h2 class="links">More >></h2>
     </div>
     <div class="homepage-content5-part3ofx">
-      <img src="images/homeimage1.jpg" class="homepage-images" alt="Picture of Rainydays founders at a young age">
+      <img src="images/homeimage1.jpg" class="homepage-images" id="hidden" alt="Picture of Rainydays founders at a young age">
     </div>
   </main>
   <footer>

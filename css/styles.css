@@ -92,10 +92,23 @@ header {
   padding-right: 0px;
   margin-right: 0px;
   height: 65px;
-  max-width: 100%;
   box-shadow: 0px 2px 6px #00000045;
   align-items: center;
   /*outline: solid red;*/
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+.fa-bars {
+  color: #2b2b2b;
+  font-size: 50px;
+  padding: 1.5rem;
 }
 
 nav {
@@ -103,7 +116,7 @@ nav {
   align-items: center;
   margin-right: 10px;
   height: 65px;
-  /*outline: solid red;*/
+  /*outline: solid rgb(0, 255, 98);*/
   flex: 8;
 }
 
@@ -146,11 +159,12 @@ nav a {
   padding-left: 27px;
   /*outline: solid red;*/
   flex: 1;
+  display: flex;
+  flex-direction: row;
 }
 
 .flaticon-avatar,
 .flaticon-shopping-cart {
-  float: right;
   padding: 10px;
 }
 
@@ -161,13 +175,13 @@ nav a {
 
 .searchbox-whole {
   display: flex;
+  flex-direction: row;
   align-items: center;
   margin: 0px;
   height: 31px;
-  width: 422px;
   border-radius: 4px;
   background: rgba(43, 43, 43, 0.16);
-  /*outline: solid rgb(0, 255, 0); */
+  /*outline: solid rgb(0, 255, 0);*/
   position: relative;
   flex: 3;
 }
@@ -181,11 +195,11 @@ nav a {
   flex: 9;
 }
 
-.searchiconwrapper {
+.flaticon-search {
   flex: 1;
-  /*outline: solid rgb(72, 255, 0);*/
-  font-size: 1.2em;
-  padding-right: 5px;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  padding-right: 10px;
   cursor: pointer;
   color: rgba(43, 43, 43, 0.7);
 }
@@ -514,6 +528,7 @@ main {
   padding-right: 1.25rem;
   border: none;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .cta-button:hover {
@@ -575,16 +590,150 @@ footer h4 {
   margin-bottom: 50px;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (max-width: 1500px) {
   nav li {
     padding: 21px 40px 21px 40px;
-    /*outline: solid rgb(234, 0, 255);*/
   }
 }
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (max-width: 1366px) {
   nav li {
     padding: 21px 35px 21px 35px;
-    /*outline: solid rgb(234, 0, 255);*/
+  }
+
+  .nav-icons-rightside {
+    padding-right: 58px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-box {
+    display: none;
+  }
+  .headerflexbox {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0px 2px 6px #00000045;
+    margin-bottom: 1rem;
+    margin-left: 0px;
+    margin-top: 1rem;
+    margin-right: 0px;
+    padding: 0px;
+  }
+  #hamburger-menu:checked ~ .headerflexbox {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: auto;
+    margin-left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 1rem;
+  }
+
+  /*///////////////////////////////////*/
+
+  nav {
+    height: auto;
+    width: 100%;
+  }
+
+  nav ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /*outline: solid rgb(248, 4, 146);*/
+  }
+
+  nav li {
+    display: block;
+    margin: 0px;
+    /*outline: solid rgb(4, 248, 207);*/
+  }
+
+  /*///////////////////////////////////*/
+
+  .searchbox-whole {
+    width: 80%;
+    flex: 3;
+    margin-top: 5rem;
+  }
+
+  .nav-icons-rightside {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    /*outline: solid rgb(4, 248, 207);*/
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .flaticon-avatar,
+  .flaticon-shopping-cart {
+    padding: 10px;
+    margin-top: 2rem;
+    /*outline: solid rgb(248, 4, 155);*/
+  }
+
+  /*///////////////////////////////////*/
+
+  main {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    margin: 0px;
+  }
+
+  #hidden {
+    display: none;
+  }
+
+  .homepage-content3-part1ofx:nth-child(n) {
+    margin-top: -8.75rem;
+  }
+
+  .homepage-content4-part2ofx {
+    margin-top: -7rem;
+  }
+
+  .homepage-content4-part3ofx:nth-child(n),
+  .homepage-content4-part2ofx:nth-child(n) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  /*///////////////////////////////////*/
+
+  footer {
+    height: auto;
+  }
+
+  .footerblock {
+    display: block;
+  }
+
+  .footersection1,
+  .footersection2,
+  .footersection3 {
+    display: block;
+    margin: 5rem;
+  }
+
+  .footerlogo {
+    display: none;
   }
 }
