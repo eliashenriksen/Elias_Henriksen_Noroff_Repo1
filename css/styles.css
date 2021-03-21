@@ -38,6 +38,7 @@ a {
 
 ul {
   font-size: 0.875rem;
+  font-family: "Open Sans", sans-serif;
   list-style-type: none;
   padding: 0;
 }
@@ -61,11 +62,11 @@ ul {
   cursor: pointer;
 }
 
-.nomargins {
+.no-margins {
   margin: 0px;
 }
 
-.nopadding {
+.no-padding {
   padding: 0px;
 }
 
@@ -458,11 +459,41 @@ main {
   margin-top: -8.75rem;
 }
 
-/*.homepage-content4-part3ofx ul {
-  font-size: 0.875rem;
-  list-style-type: none;
-  padding: 0;
-}*/
+.homepage-content5-part1ofx {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 10;
+  grid-row-end: 11;
+  /*outline: solid red;*/
+}
+
+.homepage-content5-part2ofx {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 11;
+  grid-row-end: 12;
+  /*outline: solid red;*/
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.homepage-content5-part3ofx {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 10;
+  grid-row-end: 12;
+  /*outline: solid red;*/
+}
+
+.homepage-content5-part1ofx:nth-child(n),
+.homepage-content5-part2ofx:nth-child(n) {
+  margin-right: 2rem;
+}
+
+.homepage-content5-part2ofx:nth-child(n) {
+  margin-top: -10rem;
+}
 
 /* ////////////// HOMEPAGE CONTENT END/////////////////////////// */
 
