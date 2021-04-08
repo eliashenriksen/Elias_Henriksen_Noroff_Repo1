@@ -260,8 +260,7 @@ main {
   display: flex;
   flex-direction: column;
   text-align: left;
-  align-items: left;
-  /* outline: solid rgb(234, 0, 255); */
+  /*outline: solid rgb(234, 0, 255);*/
   background: #ebebeb;
 }
 
@@ -381,7 +380,7 @@ main {
   font-weight: lighter;
 }
 
-#productblock-price {
+h3.productblock-price {
   font-weight: bold;
 }
 
@@ -510,6 +509,9 @@ main {
 }
 
 /* ////////////// HOMEPAGE CONTENT END/////////////////////////// */
+
+/*/////////////////////  ABOUT US CONTENT START  ///////////////////////*/
+/*/////////////////////  ABOUT US CONTENT END  ///////////////////////*/
 
 .cta-button {
   display: inline-block;
@@ -698,7 +700,7 @@ footer h4 {
     margin: 0px;
   }
 
-  #hidden {
+  .hidden {
     display: none;
   }
 
