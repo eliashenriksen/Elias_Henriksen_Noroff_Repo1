@@ -520,8 +520,8 @@ h3.productblock-price {
 
 #aboutus-main {
   gap: 0px;
-  /*outline: solid red;*/
-  margin-bottom: 20rem;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
 }
 
 .aboutus-images {
@@ -578,6 +578,67 @@ h3.productblock-price {
 }
 
 /*/////////////////////  ABOUT US CONTENT END  ///////////////////////*/
+
+/*/////////////////////  CONTACT US CONTENT START  ///////////////////////*/
+
+#contactus-main {
+  gap: 0px;
+  margin-bottom: 10rem;
+  margin-top: 5rem;
+}
+
+#contactus-main h2 {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  margin-bottom: -0.5rem;
+}
+
+.contactblock1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.contactblock1 p {
+  display: inline-block;
+}
+
+.contactblock2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.contactblock3 {
+  margin-top: 5rem;
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background: #ebebeb;
+  justify-content: center;
+}
+
+.contactsection1,
+.contactsection2 {
+  display: inline-block;
+  max-width: 20rem;
+  /*outline: solid red;*/
+  margin: 2rem;
+}
+
+.contactsection1 a {
+  font-weight: bold;
+}
+
+.openhoursblock p {
+  margin: 0px;
+}
+
+/*/////////////////////  CONTACT US CONTENT END  ///////////////////////*/
 
 .cta-button {
   display: inline-block;
@@ -782,10 +843,6 @@ footer h4 {
     margin-right: 1rem;
   }
 
-  #aboutus-main {
-    margin-bottom: 10rem;
-  }
-
   .hidden {
     display: none;
   }
@@ -804,6 +861,17 @@ footer h4 {
     margin-right: 0px;
   }
 
+  /*/////////////    CONTACT US PAGE    //////////////////////*/
+
+  .contactblock3 {
+    flex-direction: column;
+  }
+
+  .contactsection1,
+  .contactsection2 {
+    align-self: center;
+  }
+
   /*///////////////////////////////////*/
 
   footer {
@@ -812,6 +880,7 @@ footer h4 {
 
   .footerblock {
     display: block;
+    margin: 0px;
   }
 
   .footersection1,
@@ -819,6 +888,7 @@ footer h4 {
   .footersection3 {
     display: block;
     margin: 5rem;
+    padding: 0px;
   }
 
   .footerlogo {
