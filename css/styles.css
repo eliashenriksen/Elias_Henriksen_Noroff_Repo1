@@ -34,6 +34,7 @@ h4 {
 
 a {
   text-decoration: none;
+  color: #2b2b2b;
 }
 
 ul {
@@ -68,6 +69,10 @@ ul {
 
 .no-padding {
   padding: 0px;
+}
+
+.current {
+  font-weight: 600;
 }
 
 body {
@@ -109,6 +114,7 @@ header {
   color: #2b2b2b;
   font-size: 50px;
   padding: 1.5rem;
+  /*outline: solid rgb(0, 255, 42);*/
 }
 
 nav {
@@ -511,6 +517,66 @@ h3.productblock-price {
 /* ////////////// HOMEPAGE CONTENT END/////////////////////////// */
 
 /*/////////////////////  ABOUT US CONTENT START  ///////////////////////*/
+
+#aboutus-main {
+  gap: 0px;
+  /*outline: solid red;*/
+  margin-bottom: 20rem;
+}
+
+.aboutus-images {
+  width: 100%;
+  height: 100%;
+  max-height: 30rem;
+  object-fit: cover;
+}
+
+.aboutblock1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  /*outline: solid rgb(53, 4, 54);*/
+}
+
+.aboutblock1 p {
+  display: inline-block;
+}
+
+.aboutblock2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  /*outline: solid rgb(255, 0, 170);*/
+}
+
+.aboutblock3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  /*outline: solid rgb(208, 255, 0);*/
+}
+
+.aboutblock4 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  /*outline: solid rgb(0, 255, 157);*/
+}
+
+.aboutblock5 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  background: #ebebeb;
+  padding: 1rem;
+  /*outline: solid rgb(0, 47, 255);*/
+}
+
 /*/////////////////////  ABOUT US CONTENT END  ///////////////////////*/
 
 .cta-button {
@@ -555,6 +621,13 @@ footer p {
   margin: 4px;
   font-weight: 400;
   line-height: 19px;
+  color: #ffffff;
+}
+
+footer a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  margin: 4px;
   color: #ffffff;
 }
 
@@ -608,13 +681,17 @@ footer h4 {
   }
 }
 
+/* Mobile */
 @media only screen and (max-width: 1300px) {
   body {
     display: flex;
     flex-direction: column;
   }
   .home-box {
-    display: none;
+    position: absolute;
+    margin-top: 1rem;
+    height: 98px;
+    background: #0c326a;
   }
   .headerflexbox {
     display: none;
@@ -630,6 +707,8 @@ footer h4 {
     margin-top: 1rem;
     margin-right: 0px;
     padding: 0px;
+    justify-content: flex-end;
+    /*outline: solid rgb(0, 255, 42);*/
   }
   #hamburger-menu:checked ~ .headerflexbox {
     display: flex;
@@ -697,7 +776,14 @@ footer h4 {
     display: flex;
     flex-direction: column;
     min-width: 300px;
-    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  #aboutus-main {
+    margin-bottom: 10rem;
   }
 
   .hidden {
