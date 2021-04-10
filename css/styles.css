@@ -655,7 +655,7 @@ h3.productblock-price {
   gap: 0;
   margin-top: 5rem;
   margin-bottom: 10rem;
-  outline: solid rgb(25, 0, 255);
+  /*outline: solid rgb(25, 0, 255);*/
 }
 
 #productsmen-main h2 {
@@ -676,7 +676,7 @@ h3.productblock-price {
 
 .productsmen-contentblock2 {
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
 }
@@ -684,11 +684,12 @@ h3.productblock-price {
 .productsmen-contentblock3 {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
   grid-column-start: 5;
   grid-column-end: 6;
   grid-row-start: 3;
   grid-row-end: 4;
-  outline: solid red;
+  /*outline: solid red;*/
 }
 
 #sortboxwrapper {
@@ -719,10 +720,57 @@ h3.productblock-price {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 4;
-  grid-row-end: 5;
-  outline: solid rgb(143, 60, 60);
+  grid-row-end: 6;
+  /*outline: solid rgb(143, 60, 60);*/
   margin-right: 2rem;
-  padding-right: 10rem;
+}
+
+.productsmen-contentblock4 section {
+  width: 100%;
+  padding-right: 8rem;
+  /*outline: solid rgb(183, 0, 255);*/
+}
+
+.productsmen-contentblock4 section h2 {
+  margin-top: 0px;
+}
+
+.productsmen-contentblock4 section p {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #2b2b2b;
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+
+.productsmen-contentblock4-section2,
+.productsmen-contentblock4-section3 {
+  margin-top: 2.25rem;
+  /*outline: solid rgb(183, 0, 255);*/
+}
+
+.productsmen-contentblock4-section2-wrapper1 {
+  display: inline-block;
+}
+
+.productsmen-contentblock4-section2-wrapper2 {
+  display: inline-block;
+  font-weight: lighter;
+  color: #2b2b2b80;
+  margin-left: 3rem;
+  padding: 0px;
+  line-height: 17px;
+}
+
+.size-checkbox-square {
+  margin-right: 1rem;
+}
+
+.size-checkbox-label {
+  font-family: "Rubik", sans-serif;
+  color: #2b2b2b;
+  font-weight: normal;
 }
 
 .productsmen-contentblock5 {
@@ -733,6 +781,29 @@ h3.productblock-price {
   grid-column-end: 6;
   grid-row-start: 4;
   grid-row-end: 5;
+  /*outline: solid rgb(143, 60, 60);*/
+  margin-bottom: 15rem;
+}
+
+.productsmen-contentblock5 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.productsmen-contentblock5 .productblock-picture {
+  /*outline: solid rgb(247, 0, 255);*/
+}
+
+.productsmen-contentblock6 {
+  display: flex;
+  flex-direction: row;
+  column-gap: 16px;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  margin-top: -15rem;
+  padding-top: 0px;
 }
 
 /*/////////////////////  PRODUCTS-MEN CONTENT END  ///////////////////////*/
