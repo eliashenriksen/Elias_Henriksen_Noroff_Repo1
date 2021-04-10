@@ -351,6 +351,7 @@ main {
 .productblock-picture {
   flex: 1;
   outline: solid rgb(43, 43, 43, 0.16);
+  background: #ebebeb;
 }
 
 .productblock-picture:hover {
@@ -359,28 +360,16 @@ main {
 }
 
 .productblock-picture img {
-  height: 100%;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .homepage-content3-part2ofx:nth-child(n) {
   margin-top: -8rem;
 }
 
-.homepage-content3-part3ofx {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  grid-row-start: 6;
-  grid-row-end: 7;
-  grid-column-start: 1;
-  grid-column-end: 6;
-  /* outline: solid rgb(255, 102, 0); */
-}
-
 .productblock-title {
   flex: 1;
-  background: #ebebeb;
   padding: 1rem;
   margin-top: 1rem;
 }
@@ -398,13 +387,9 @@ h3.productblock-price {
   font-weight: bold;
 }
 
-.homepage-content3-part3ofx:nth-child(n) {
-  margin-top: -8.75rem;
-}
-
-.homepage-content3-part4ofx {
-  grid-row-start: 7;
-  grid-row-end: 8;
+.homepage-content3-part3ofx {
+  grid-row-start: 6;
+  grid-row-end: 7;
   grid-column-start: 5;
   grid-column-end: 6;
   display: flex;
@@ -413,26 +398,27 @@ h3.productblock-price {
   /* outline: solid rgb(255, 102, 0); */
 }
 
-.homepage-content3-part4ofx:nth-child(n) {
+.homepage-content3-part3ofx:nth-child(n) {
   margin-top: -10rem;
 }
 
-.homepage-content3-part5ofx {
+.homepage-content3-part4ofx {
   display: flex;
   justify-content: center;
-  grid-row-start: 7;
-  grid-row-end: 8;
+  grid-row-start: 6;
+  grid-row-end: 7;
   grid-column-start: 1;
   grid-column-end: 6;
   /* outline: solid rgb(255, 102, 0); */
 }
 
-.homepage-content3-part5ofx:nth-child(n) {
+.homepage-content3-part4ofx:nth-child(n) {
   margin-top: -6rem;
 }
 
 /* Will have to redo these arrows with symbols to have proper hover functionality */
 .arrow {
+  align-self: center;
   display: inline-block;
   width: 0;
   height: 0;
@@ -458,16 +444,16 @@ h3.productblock-price {
 .homepage-content4-part1ofx {
   grid-column-start: 1;
   grid-column-end: 3;
-  grid-row-start: 8;
-  grid-row-end: 10;
+  grid-row-start: 7;
+  grid-row-end: 9;
   display: inline-block;
 }
 
 .homepage-content4-part2ofx {
   grid-column-start: 3;
   grid-column-end: 6;
-  grid-row-start: 8;
-  grid-row-end: 9;
+  grid-row-start: 7;
+  grid-row-end: 8;
 }
 
 .homepage-content4-part2ofx:nth-child(n) {
@@ -477,8 +463,8 @@ h3.productblock-price {
 .homepage-content4-part3ofx {
   grid-column-start: 3;
   grid-column-end: 6;
-  grid-row-start: 9;
-  grid-row-end: 10;
+  grid-row-start: 8;
+  grid-row-end: 9;
 }
 
 .homepage-content4-part3ofx:nth-child(n) {
@@ -489,16 +475,16 @@ h3.productblock-price {
 .homepage-content5-part1ofx {
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 10;
-  grid-row-end: 11;
+  grid-row-start: 9;
+  grid-row-end: 10;
   /*outline: solid red;*/
 }
 
 .homepage-content5-part2ofx {
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 11;
-  grid-row-end: 12;
+  grid-row-start: 10;
+  grid-row-end: 11;
   /*outline: solid red;*/
   display: flex;
   align-items: flex-start;
@@ -508,8 +494,8 @@ h3.productblock-price {
 .homepage-content5-part3ofx {
   grid-column-start: 2;
   grid-column-end: 6;
-  grid-row-start: 10;
-  grid-row-end: 12;
+  grid-row-start: 9;
+  grid-row-end: 11;
   /*outline: solid red;*/
 }
 
@@ -706,7 +692,6 @@ h3.productblock-price {
   border-radius: 4px;
   background: rgba(43, 43, 43, 0.16);
   padding-left: 1rem;
-  padding-right: 1rem;
   /*outline: solid rgb(30, 255, 0);*/
 }
 
@@ -784,24 +769,7 @@ h3.productblock-price {
   /*outline: solid rgb(143, 60, 60);*/
 }
 
-.productsmen-contentblock5 img {
-  max-width: 100%;
-  height: auto;
-}
-
 .productsmen-contentblock6 {
-  display: flex;
-  flex-direction: row;
-  column-gap: 1rem;
-  grid-column-start: 2;
-  grid-column-end: 6;
-  grid-row-start: 5;
-  grid-row-end: 6;
-  margin-top: 0px;
-  padding-top: 0px;
-}
-
-.productsmen-contentblock7 {
   display: flex;
   flex-direction: row;
   column-gap: 1rem;
@@ -813,24 +781,7 @@ h3.productblock-price {
   /*outline: solid rgb(143, 60, 60);*/
 }
 
-.productsmen-contentblock7 img {
-  max-width: 100%;
-  height: auto;
-}
-
-.productsmen-contentblock8 {
-  display: flex;
-  flex-direction: row;
-  column-gap: 1rem;
-  grid-column-start: 2;
-  grid-column-end: 6;
-  grid-row-start: 8;
-  grid-row-end: 9;
-  margin-top: 0px;
-  padding-top: 0px;
-}
-
-.productsmen-contentblock9 {
+.productsmen-contentblock7 {
   display: flex;
   flex-direction: row;
   column-gap: 1rem;
@@ -842,21 +793,37 @@ h3.productblock-price {
   /*outline: solid rgb(143, 60, 60);*/
 }
 
-.productsmen-contentblock9 img {
-  max-width: 100%;
-  height: auto;
-}
-
-.productsmen-contentblock10 {
+.productsmen-contentblock8 {
   display: flex;
   flex-direction: row;
-  column-gap: 1rem;
-  grid-column-start: 2;
+  justify-content: center;
+  align-content: center;
+  grid-column-start: 1;
   grid-column-end: 6;
-  grid-row-start: 10;
-  grid-row-end: 11;
-  margin-top: 0px;
-  padding-top: 0px;
+  grid-row-start: 11;
+  grid-row-end: 12;
+  margin-top: 5.5rem;
+  /*outline: solid rgb(0, 89, 255);*/
+}
+
+.page-number-button {
+  align-self: center;
+  padding: 1rem;
+  margin: 0.25rem;
+  color: #2b2b2b;
+  font-size: 1rem;
+  font-family: "Rubik", sans-serif;
+  box-shadow: 0px 2px 6px #00000045;
+}
+
+.pagen-number-button-selected,
+.page-number-button:hover {
+  background: #0c326a;
+  color: #ffffff;
+}
+
+.productsmen-contentformobile1 {
+  display: none;
 }
 
 /*/////////////////////  PRODUCTS-MEN CONTENT END  ///////////////////////*/
@@ -1100,6 +1067,27 @@ footer h4 {
   }
 
   /*/////////////    CONTACT US PAGE END  (mobile)   //////////////////////*/
+
+  /*/////////////    PRODUCTS PAGE MEN START  (mobile)   //////////////////////*/
+
+  #sortboxwrapper {
+    align-self: normal;
+  }
+
+  .productsmen-contentblock4 section {
+    justify-content: center;
+    padding-right: 0;
+    /*outline: solid rgb(183, 0, 255);*/
+  }
+
+  .productsmen-contentformobile1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /*outline: solid rgb(183, 0, 255);*/
+  }
+
+  /*/////////////    PRODUCTS PAGE MEN END  (mobile)   //////////////////////*/
 
   footer {
     height: auto;
