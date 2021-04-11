@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="checkout-header">
         <a href="index.html">
             <div class="home-box">
                 <img src="images/rainydayslogo.png" class="rainydayslogo" alt="Rainydays logo / Home">
@@ -29,12 +29,113 @@
     </header>
     <main id="checkout-main">
         <div class="checkoutblock1">
-            <p><a href="index.html">Home /</a></p>
-            <p class="current">Contact us</p>
+            <h1>Checkout</h1>
         </div>
-        <div class="checkoutblock2">
-            <h1>Contact us</h1>
-        </div>
+        <section class="checkout-section1">
+            <h2>Summary</h2>
+            <div class="checkout-section1-wrapper1">
+                <div class="checkout-section1-wrapper2">
+                    <div class="checkout-section1-producttitle">
+                        <h3 class="checkout-product-light-title">Rainydays Niyama Ski Jacket Men´s</h3>
+                        <p>Size: L</p>
+                        <p>Colour: Golden Oak</p>
+                        <h3 class="productblock-price">839,-</h3>
+                    </div>
+                    <div class="checkout-section1-producttitle">
+                        <h3 class="checkout-product-light-title">Rainydays Niyama Ski Jacket Men´s</h3>
+                        <p>Size: L</p>
+                        <p>Colour: Golden Oak</p>
+                        <h3 class="productblock-price">839,-</h3>
+                    </div>
+                    <div class="checkout-section1-producttitle">
+                        <h3 class="checkout-product-light-title">Rainydays Niyama Ski Jacket Men´s</h3>
+                        <p>Size: L</p>
+                        <p>Colour: Golden Oak</p>
+                        <h3 class="productblock-price">839,-</h3>
+                    </div>
+                </div>
+                <div class="checkout-section1-wrapper3">
+                    <h2>Total: 5400,-</h2>
+                </div>
+            </div>
+        </section>
+        <section class="checkout-section2">
+            <h2>Your information</h2>
+            <div class="checkout-selections-wrapper">
+                <div class="checkout-email checkout-selections">
+                    <label for="email" class="checkout-labels">E-mail adress</label>
+                    <input type="email" id="email" size="30" required class="checkout-inputs">
+                </div>
+                <div class="checkout-phone checkout-selections">
+                    <label for="phone" class="checkout-labels">Phone number</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required class="checkout-inputs">
+                </div>
+                <div class="checkout-name checkout-selections">
+                    <label for="name" class="checkout-labels">Name</label>
+                    <input type="text" id="name" name="name" required minlength="2" maxlength="30" size="20" class="checkout-inputs">
+                </div>
+                <div class="checkout-surname checkout-selections">
+                    <label for="surname" class="checkout-labels">Surname</label>
+                    <input type="text" id="surname" name="surname" required minlength="2" maxlength="30" size="20" class="checkout-inputs">
+                </div>
+                <div class="checkout-adress checkout-selections">
+                    <label for="adress" class="checkout-labels">Adress</label>
+                    <input type="text" id="adress" name="adress" required minlength="2" maxlength="100" size="50" class="checkout-inputs">
+                </div>
+                <div class="checkout-city checkout-selections">
+                    <label for="city" class="checkout-labels">City</label>
+                    <input type="city" id="city" name="city" required minlength="2" maxlength="100" size="30" class="checkout-inputs">
+                </div>
+                <div class="checkout-country checkout-selections">
+                    <label for="country" class="checkout-labels">Country</label>
+                    <select name="country" id="country" class="checkout-inputs">
+                        <option value="Norway">Norway</option>
+                        <option value="Sweden">Sweden</option>
+                        <option value="Denmark">Denmark</option>
+                        <option value="Finland">Finland</option>
+                    </select>
+                </div>
+                <div class="checkout-postcode checkout-selections">
+                    <label for="postcode" class="checkout-labels">Postcode</label>
+                    <input type="postcode" id="postcode" name="postcode" min="0" max="99999" size="10" class="checkout-inputs">
+                </div>
+            </div>
+        </section>
+        <section class="checkout-section3">
+            <h2>Delivery</h2>
+            <div class="checkout-selections-wrapper">
+                <label for="delivery" class="checkout-labels">Free delivery by PostNord to</label>
+                <div class="checkout-delivery" id="delivery">
+                </div>
+                <div class="checkout-estimatedtime">
+                    <p>Estimated delivery time: 3 - 5 business days.</p>
+                </div>
+            </div>
+        </section>
+        <section class="checkout-section4">
+            <h2>Payment</h2>
+            <div class="checkout-selections-wrapper">
+                <div class="checkout-creditcard checkout-selections">
+                    <label for="creditcard" class="checkout-labels">Card number</label>
+                    <input type="creditcard" id="creditcard" name="creditcard" min="0" max="99999999999999999999999" size="50" class="checkout-inputs">
+                </div>
+                <div class="checkout-creditcard-date checkout-selections">
+                    <label for="creditcard-date" class="checkout-labels">Month / Year</label>
+                    <input type="month" id="creditcard-date" name="creditcard-date" min="2018-03" value="2018-05" class="checkout-inputs">
+                </div>
+                <div class="checkout-creditcard-cvc checkout-selections">
+                    <label for="cvc" class="checkout-labels">CVC (?)</label>
+                    <input type="number" id="cvc" name="cvc" min="0" max="9999" size="10" class="checkout-inputs">
+                    <div class="checkout-acceptedpayments">
+                        <p>We currently only accept payments by card.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="checkout-section5">
+            <a href="#" class="cta-button">finish purchase</a>
+        </section>
+        <section class="checkout-section6"></section>
     </main>
 </body>
 
