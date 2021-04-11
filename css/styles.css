@@ -142,7 +142,6 @@ nav ul {
 
 nav li {
   display: inline-block;
-  float: left;
   cursor: pointer;
   /*outline: solid rgb(234, 0, 255);*/
 }
@@ -695,10 +694,6 @@ h3.productblock-price {
   /*outline: solid rgb(30, 255, 0);*/
 }
 
-.sortbylabel {
-  /*outline: solid rgb(183, 0, 255);*/
-}
-
 .productsmen-contentblock4 {
   display: flex;
   flex-direction: column;
@@ -1193,6 +1188,55 @@ h3.productblock-price {
 
 /*/////////////////         CHECKOUT PAGE CONTENT END //////////////////*/
 
+/*/////////////////         CHECKOUT SUCCESS CONTENT START //////////////////*/
+
+#checkoutsuccess-main {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+  /* outline: solid rgb(251, 255, 0); */
+  background: #ebebeb;
+}
+
+.checkoutsuccess-image1 {
+  background-image: url(/images/confetti.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 10%;
+  right: 15%;
+  height: 367px;
+  width: 353px;
+}
+
+.checkoutsuccess-image2 {
+  background-image: url(/images/confetti.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 10%;
+  left: 15%;
+  height: 367px;
+  width: 353px;
+}
+
+.checkoutsucces-section1-wrapper1 {
+  display: flex;
+  flex-direction: column;
+  /* outline: solid red; */
+}
+
+.checkoutsucces-content {
+  align-self: center;
+  padding: 1rem;
+}
+
+.checkoutsucces-content p {
+  margin: -1rem;
+}
+
+/*/////////////////         CHECKOUT SUCCESS CONTENT END //////////////////*/
 .cta-button {
   display: inline-block;
   font-family: "Rubik", sans-serif;
@@ -1285,9 +1329,21 @@ footer h4 {
   align-content: center;
 }
 
+@media only screen and (max-width: 1700px) {
+  .checkoutsuccess-image1,
+  .checkoutsuccess-image2 {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1500px) {
   nav a {
     padding: 21px 40px 21px 40px;
+  }
+
+  .checkoutsuccess-image1,
+  .checkoutsuccess-image2 {
+    display: none;
   }
 }
 
@@ -1298,6 +1354,11 @@ footer h4 {
 
   .nav-icons-rightside {
     padding-right: 58px;
+  }
+
+  .checkoutsuccess-image1,
+  .checkoutsuccess-image2 {
+    display: none;
   }
 }
 
@@ -1466,6 +1527,11 @@ footer h4 {
   }
 
   /*/////////////    PRODUCT SPECIFIC PAGE END (mobile)   //////////////////////*/
+
+  .checkoutsuccess-image1,
+  .checkoutsuccess-image2 {
+    display: none;
+  }
 
   footer {
     height: auto;
