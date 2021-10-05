@@ -174,11 +174,22 @@ nav a {
   flex: 1;
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+.cart-item-number {
+  display: block;
+  font-weight: bold;
+  color: #ff2323;
+  position: absolute;
+  top: -25px;
+  right: 5px;
 }
 
 .flaticon-avatar,
 .flaticon-shopping-cart {
   padding: 10px;
+  position: relative;
 }
 
 .flaticon-avatar:hover,
@@ -1136,6 +1147,16 @@ h3.productblock-price {
   margin-left: 0;
 }
 
+/*//////////////////////////  SHOPPING CART PAGE START (NEW) ///////////////////////////////*/
+
+#shoppingcart-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*//////////////////////////  SHOPPING CART PAGE END (NEW) ///////////////////////////////*/
+
 /*//////////////////////////  CHECKOUT LABEL AND INPUT STUFF ///////////////////////////////*/
 
 .checkout-selections-wrapper {
@@ -1439,16 +1460,9 @@ footer h4 {
     flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
+    align-items: center;
     /*outline: solid rgb(4, 248, 207);*/
-    padding: 0px;
-    margin: 0px;
-  }
-
-  .flaticon-avatar,
-  .flaticon-shopping-cart {
-    padding: 10px;
-    margin-top: 2rem;
-    /*outline: solid rgb(248, 4, 155);*/
+    margin: 2rem;
   }
 
   /*///////////////////////////////////*/
@@ -1527,6 +1541,10 @@ footer h4 {
   }
 
   /*/////////////    PRODUCT SPECIFIC PAGE END (mobile)   //////////////////////*/
+
+  .shoppingcartblock2 {
+    margin-top: 10rem;
+  }
 
   .checkoutsuccess-image1,
   .checkoutsuccess-image2 {
