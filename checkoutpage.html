@@ -99,6 +99,9 @@
             <h2>Payment</h2>
             <div class="checkout-selections-wrapper">
                 <div class="checkout-creditcard checkout-selections">
+                    <div class="checkout-acceptedpayments">
+                        <p>We currently only accept payments by card.</p>
+                    </div>
                     <label for="creditcard" class="checkout-labels">Card number</label>
                     <input type="creditcard" id="creditcard" name="creditcard" min="0" max="99999999999999999999999" size="50" class="checkout-inputs">
                 </div>
@@ -109,18 +112,19 @@
                 <div class="checkout-creditcard-cvc checkout-selections">
                     <label for="cvc" class="checkout-labels">CVC (?)</label>
                     <input type="number" id="cvc" name="cvc" min="0" max="9999" size="10" class="checkout-inputs">
-                    <div class="checkout-acceptedpayments">
-                        <p>We currently only accept payments by card.</p>
+                    <div>
+                        <p class="number-of-items">Number of items : 0</p>
+                        <h2 class="total-price">Total: 0,-</h2>
                     </div>
                 </div>
             </div>
         </section>
         <section class="checkout-section5">
-            <a href="checkoutsuccess.html" class="cta-button">finish purchase</a>
+            <a href="checkoutsuccess.html" class="cta-button finish-purchase-button">finish purchase</a>
         </section>
         <section class="checkout-section6"></section>
+        <script src="js/checkoutpage.js"></script>
     </main>
-    <script src="js/cartscript.js"></script>
 </body>
 
 </html>

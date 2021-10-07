@@ -66,7 +66,7 @@
             <div class="nav-icons-rightside">
                 <a href="shoppingcart.html">
                     <i class="flaticon-shopping-cart" aria-label="My Cart">
-                        <p class="cart-item-number">1</p>
+                        <p class="cart-item-number"></p>
                     </i>
                 </a>
                 <i class="flaticon-avatar" aria-label="My Profile"></i>
@@ -80,33 +80,17 @@
         <section>
             <h2>Summary</h2>
             <div>
-                <div>
-                    <div class="checkout-section1-producttitle">
-                        <h3 class="checkout-product-light-title">Rainydays Niyama Ski Jacket Men´s</h3>
-                        <p>Size: L</p>
-                        <p>Colour: Golden Oak</p>
-                        <h3 class="productblock-price">839,-</h3>
-                    </div>
-                    <div class="checkout-section1-producttitle">
-                        <h3 class="checkout-product-light-title">Rainydays Niyama Ski Jacket Men´s</h3>
-                        <p>Size: L</p>
-                        <p>Colour: Golden Oak</p>
-                        <h3 class="productblock-price">839,-</h3>
-                    </div>
-                    <div class="checkout-section1-producttitle">
-                        <h3 class="checkout-product-light-title">Rainydays Niyama Ski Jacket Men´s</h3>
-                        <p>Size: L</p>
-                        <p>Colour: Golden Oak</p>
-                        <h3 class="productblock-price">839,-</h3>
-                    </div>
+                <div class="cart-item-holder">
                 </div>
                 <div class="checkout-section1-wrapper3">
-                    <h2>Total: 5400,-</h2>
+                    <button type="button" class="cart-remove-button">X</button>
+                    <p class="number-of-items">Number of items : 0</p>
+                    <h2 class="total-price">Total: 0,-</h2>
                 </div>
             </div>
         </section>
-        <section>
-            <a href="checkoutpage.html" class="cta-button">continue purchase</a>
+        <section class="checkout-button-holder">
+            <a href="checkoutpage.html" class="cta-button">to checkout</a>
         </section>
         <section class="checkout-section6"></section>
     </main>
@@ -140,7 +124,9 @@
         <div class="footerlogo" aria-hidden="true">
         </div>
     </footer>
-    <script src="js/cartscript.js"></script>
+    <script src="js/jacketlist.js"></script>
+    <script src="js/shoppingcart.js"></script>
+    <script src="js/shoppingcartnumber.js"></script>
 </body>
 
 </html>
