@@ -22,6 +22,7 @@ function jacketObjectToHtml(inputJacketObject) {
             <p>Size: ${inputJacketObject.size}</p>
             <p>Colour: ${inputJacketObject.colour}</p>
             <h3 class="productblock-price">${inputJacketObject.price}</h3>
+            <button type="button" class="cart-remove-button">X</button>
         </div>
     `;
     return spitOutHtml;
