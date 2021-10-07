@@ -11,7 +11,7 @@ function cartItemNumberHandler() {
     sessionStorage.setItem("sessionStorageCartItems", JSON.stringify(cartItems));
     cartItemNumberHolder++;
     productPageCartItemNumberTargeter.innerHTML = cartItemNumberHolder;
-    alert("Added to cart!");
+    //alert("Added to cart!");
 };
 
 addToCartButton.addEventListener("click", cartItemNumberHandler);
