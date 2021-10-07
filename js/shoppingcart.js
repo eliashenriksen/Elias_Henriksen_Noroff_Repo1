@@ -27,7 +27,7 @@ function jacketObjectToHtml(inputJacketObject) {
     return spitOutHtml;
 };
 
-cartRemoveButton.addEventListener("click", cartItemRemove);
+//cartRemoveButton.addEventListener("click", cartItemRemove);
 
 function totalPriceCalculator(inputCartItems) {
     let totalPrice = 0;
