@@ -81,7 +81,7 @@
         <div class="productsmen-contentblock2">
             <h1>Men's Jackets</h1>
         </div>
-        <div class="productsmen-contentblock3">
+        <div class="productsmen-contentblock3 hidden">
             <div id="sortboxwrapper">
                 <label for="sort-by" class="sortbylabel"><h2>Sort by</h2></label>
                 <select name="sorting-selection" id="sort-by" class="sortbybox">
@@ -93,7 +93,72 @@
                 </select>
             </div>
         </div>
-        <div class="productsmen-contentblock4">
+        <section class="mobileSortingSection">
+            <div id="sortByMobile">
+                <label for="sortbyMobile" class="sortbyMobileLabel">
+                    <h2>Sort by</h2>
+                </label>
+                <select name="sortbyMobileSelection" id="sortbyMobile" class="mobileSortingBox">
+                    <option value="Shell Jackets Men">Shell Jackets Men</option>
+                    <option value="Outdoor Jackets Men">Outdoor Jackets Men</option>
+                    <option value="Down Jackets Men">Down Jackets Men</option>
+                    <option value="Warm Jackets Men">Warm Jackets Men</option>
+                    <option value="Parkas Men">Parkas Men</option>
+                    <option value="Ski Jacket Men">Ski Jacket Men</option>
+                    <option value="Fleece jackets Men">Fleece jackets Men</option>
+                    <option value="Rain jackets Men">Rain jackets Men</option>
+                    <option value="Training jackets Men">Training jackets Men</option>
+                    <option value="Softshell jackets Men">Softshell jackets Men</option>
+                    <option value="Thin Jackets Men">Thin Jackets Men</option>
+                </select>
+            </div>
+            <div id="categorySortMobile">
+                <label for="categoryMobile" class="categoryMobileLabel">
+                    <h2>Category</h2>
+                </label>
+                <select name="categoryMobileSelection" id="categoryMobile" class="mobileSortingBox">
+                    <option value="Shell Jackets Men">Shell Jackets Men</option>
+                    <option value="Outdoor Jackets Men">Outdoor Jackets Men</option>
+                    <option value="Down Jackets Men">Down Jackets Men</option>
+                    <option value="Warm Jackets Men">Warm Jackets Men</option>
+                    <option value="Parkas Men">Parkas Men</option>
+                    <option value="Ski Jacket Men">Ski Jacket Men</option>
+                    <option value="Fleece jackets Men">Fleece jackets Men</option>
+                    <option value="Rain jackets Men">Rain jackets Men</option>
+                    <option value="Training jackets Men">Training jackets Men</option>
+                    <option value="Softshell jackets Men">Softshell jackets Men</option>
+                    <option value="Thin Jackets Men">Thin Jackets Men</option>
+                </select>
+            </div>
+            <div id="sizeSortMobile">
+                <label for="sizeMobile" class="sizeMobileLabel">
+                    <h2>Size</h2>
+                </label>
+                <select name="sizeMobileSelection" id="sizeMobile" class="mobileSortingBox">
+                    <option value="XXS">XXS</option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                    <option value="XXXL">XXXL</option>
+                </select>
+            </div>
+            <div id="priceSortMobile">
+                <label for="priceMobile" class="priceMobileLabel">
+                    <h2>Price range</h2>
+                </label>
+                <select name="priceMobileSelection" id="priceMobile" class="mobileSortingBox">
+                    <option value="819 - 1999">819 - 1999</option>
+                    <option value="2000 - 2999">2000 - 2999</option>
+                    <option value="3000 - 5999">3000 - 5999</option>
+                    <option value="6000 - 8999">6000 - 8999</option>
+                    <option value="9000 - 11999">9000 - 11999</option>
+                </select>
+            </div>
+        </section>
+        <div class="productsmen-contentblock4 hidden">
             <section>
                 <h2>Category</h2>
                 <p>Shell Jackets Men</p>
@@ -189,124 +254,188 @@
             </section>
         </div>
         <div class="productsmen-contentblock5 hidden">
-            <div class="productblock-picture hidden">
-                <img src="images/productimages/productimage1.jpg" alt="Picture of Rainydays 3 Layer Jacket Men" href="index.html">
-                <div class="productblock-title hidden">
-                    <a href="productspecificpage.html"><h3>Rainydays 3 Layer Jacket Men</h3></a>
-                    <h3 class="productblock-price">1602,-</h3>
+            <a href="productspecificpage.html">
+                <div class="productblock-picture hidden">
+                    <img src="images/productimages/productimage1.jpg" alt="Picture of Rainydays 3 Layer Jacket Men" href="index.html">
+                    <div class="productblock-title hidden">
+                        <a href="productspecificpage.html">
+                            <h3>Rainydays 3 Layer Jacket Men</h3>
+                        </a>
+                        <h3 class="productblock-price">1602,-</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="productblock-picture hidden">
-                <img src="images/productimages/productimage2.jpg" alt="Picture of Rainydays Niyama Ski Jacket Men´s">
-                <div class="productblock-title hidden">
-                    <a href="productspecificpage.html"><h3>Rainydays 3 Layer Jacket Men</h3></a>
-                    <h3 class="productblock-price">1602,-</h3>
+            </a>
+            <a href="productspecificpage.html">
+                <div class="productblock-picture hidden">
+                    <img src="images/productimages/productimage2.jpg" alt="Picture of Rainydays Niyama Ski Jacket Men´s">
+                    <div class="productblock-title hidden">
+                        <a href="productspecificpage.html">
+                            <h3>Rainydays 3 Layer Jacket Men</h3>
+                        </a>
+                        <h3 class="productblock-price">1602,-</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="productblock-picture hidden">
-                <img src="images/productimages/productimage3.jpg" alt="Picture of Rainydays Niyama Ski Jacket Men´s">
-                <div class="productblock-title hidden">
-                    <a href="productspecificpage.html"><h3>Rainydays 3 Layer Jacket Men</h3></a>
-                    <h3 class="productblock-price">1602,-</h3>
+            </a>
+            <a href="productspecificpage.html">
+                <div class="productblock-picture hidden">
+                    <img src="images/productimages/productimage3.jpg" alt="Picture of Rainydays Niyama Ski Jacket Men´s">
+                    <div class="productblock-title hidden">
+                        <a href="productspecificpage.html">
+                            <h3>Rainydays 3 Layer Jacket Men</h3>
+                        </a>
+                        <h3 class="productblock-price">1602,-</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="productblock-picture hidden">
-                <img src="images/productimages/productimage4.jpg" alt="Picture of Rainydays 3 Layer Jacket Men">
-                <div class="productblock-title hidden">
-                    <a href="productspecificpage.html"><h3>Rainydays 3 Layer Jacket Men</h3></a>
-                    <h3 class="productblock-price">1602,-</h3>
+            </a>
+            <a href="productspecificpage.html">
+                <div class="productblock-picture hidden">
+                    <img src="images/productimages/productimage4.jpg" alt="Picture of Rainydays 3 Layer Jacket Men">
+                    <div class="productblock-title hidden">
+                        <a href="productspecificpage.html">
+                            <h3>Rainydays 3 Layer Jacket Men</h3>
+                        </a>
+                        <h3 class="productblock-price">1602,-</h3>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         <div class="productsmen-contentblock6">
-            <div class="productblock-picture hidden">
-                <img src="images/productimages/productimage1.jpg" alt="Picture of Rainydays 3 Layer Jacket Men">
-                <div class="productblock-title hidden">
-                    <a href="productspecificpage.html"><h3>Rainydays 3 Layer Jacket Men</h3></a>
-                    <h3 class="productblock-price">1602,-</h3>
+            <a href="productspecificpage.html">
+                <div class="productblock-picture hidden">
+                    <img src="images/productimages/productimage1.jpg" alt="Picture of Rainydays 3 Layer Jacket Men">
+                    <div class="productblock-title hidden">
+                        <a href="productspecificpage.html">
+                            <h3>Rainydays 3 Layer Jacket Men</h3>
+                        </a>
+                        <h3 class="productblock-price">1602,-</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="productblock-picture hidden">
-                <img src="images/productimages/productimage2.jpg" alt="Picture of Rainydays Niyama Ski Jacket Men´s">
-                <div class="productblock-title hidden">
-                    <a href="productspecificpage.html"><h3>Rainydays Niyama Ski Jacket Men´s</h3></a>
-                    <h3 class="productblock-price">839,-</h3>
+            </a>
+            <a href="productspecificpage.html">
+                <div class="productblock-picture hidden">
+                    <img src="images/productimages/productimage2.jpg" alt="Picture of Rainydays Niyama Ski Jacket Men´s">
+                    <div class="productblock-title hidden">
+                        <a href="productspecificpage.html">
+                            <h3>Rainydays Niyama Ski Jacket Men´s</h3>
+                        </a>
+                        <h3 class="productblock-price">839,-</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="productblock-picture hidden">
-                <img src="images/productimages/productimage3.jpg" alt="Picture of Rainydays Niyama Ski Jacket Men´s">
-                <div class="productblock-title hidden">
-                    <a href="productspecificpage.html"><h3>Rainydays Niyama Ski Jacket Men´s</h3></a>
-                    <h3 class="productblock-price">839,-</h3>
+            </a>
+            <a href="productspecificpage.html">
+                <div class="productblock-picture hidden">
+                    <img src="images/productimages/productimage3.jpg" alt="Picture of Rainydays Niyama Ski Jacket Men´s">
+                    <div class="productblock-title hidden">
+                        <a href="productspecificpage.html">
+                            <h3>Rainydays Niyama Ski Jacket Men´s</h3>
+                        </a>
+                        <h3 class="productblock-price">839,-</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="productblock-picture hidden">
-                <img src="images/productimages/productimage4.jpg" alt="Picture of Rainydays 3 Layer Jacket Men">
-                <div class="productblock-title hidden">
-                    <a href="productspecificpage.html"><h3>Rainydays 3 Layer Jacket Men</h3></a>
-                    <h3 class="productblock-price">1602,-</h3>
+            </a>
+            <a href="productspecificpage.html">
+                <div class="productblock-picture hidden">
+                    <img src="images/productimages/productimage4.jpg" alt="Picture of Rainydays 3 Layer Jacket Men">
+                    <div class="productblock-title hidden">
+                        <a href="productspecificpage.html">
+                            <h3>Rainydays 3 Layer Jacket Men</h3>
+                        </a>
+                        <h3 class="productblock-price">1602,-</h3>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         <div class="productsmen-contentblock7">
-            <div class="productblock-picture hidden">
-                <img src="images/productimages/productimage1.jpg" alt="Picture of Rainydays 3 Layer Jacket Men">
-                <div class="productblock-title hidden">
-                    <a href="productspecificpage.html"><h3>Rainydays 3 Layer Jacket Men</h3></a>
-                    <h3 class="productblock-price">1602,-</h3>
+            <a href="productspecificpage.html">
+                <div class="productblock-picture hidden">
+                    <img src="images/productimages/productimage1.jpg" alt="Picture of Rainydays 3 Layer Jacket Men">
+                    <div class="productblock-title hidden">
+                        <a href="productspecificpage.html">
+                            <h3>Rainydays 3 Layer Jacket Men</h3>
+                        </a>
+                        <h3 class="productblock-price">1602,-</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="productblock-picture hidden">
-                <img src="images/productimages/productimage2.jpg" alt="Picture of Rainydays Niyama Ski Jacket Men´s">
-                <div class="productblock-title hidden">
-                    <a href="productspecificpage.html"><h3>Rainydays Niyama Ski Jacket Men´s</h3></a>
-                    <h3 class="productblock-price">839,-</h3>
+            </a>
+            <a href="productspecificpage.html">
+                <div class="productblock-picture hidden">
+                    <img src="images/productimages/productimage2.jpg" alt="Picture of Rainydays Niyama Ski Jacket Men´s">
+                    <div class="productblock-title hidden">
+                        <a href="productspecificpage.html">
+                            <h3>Rainydays Niyama Ski Jacket Men´s</h3>
+                        </a>
+                        <h3 class="productblock-price">839,-</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="productblock-picture hidden">
-                <img src="images/productimages/productimage3.jpg" alt="Picture of Rainydays Niyama Ski Jacket Men´s">
-                <div class="productblock-title hidden">
-                    <a href="productspecificpage.html"><h3>Rainydays Niyama Ski Jacket Men´s</h3></a>
-                    <h3 class="productblock-price">839,-</h3>
+            </a>
+            <a href="productspecificpage.html">
+                <div class="productblock-picture hidden">
+                    <img src="images/productimages/productimage3.jpg" alt="Picture of Rainydays Niyama Ski Jacket Men´s">
+                    <div class="productblock-title hidden">
+                        <a href="productspecificpage.html">
+                            <h3>Rainydays Niyama Ski Jacket Men´s</h3>
+                        </a>
+                        <h3 class="productblock-price">839,-</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="productblock-picture hidden">
-                <img src="images/productimages/productimage4.jpg" alt="Picture of Rainydays 3 Layer Jacket Men">
-                <div class="productblock-title hidden">
-                    <a href="productspecificpage.html"><h3>Rainydays 3 Layer Jacket Men</h3></a>
-                    <h3 class="productblock-price">1602,-</h3>
+            </a>
+            <a href="productspecificpage.html">
+                <div class="productblock-picture hidden">
+                    <img src="images/productimages/productimage4.jpg" alt="Picture of Rainydays 3 Layer Jacket Men">
+                    <div class="productblock-title hidden">
+                        <a href="productspecificpage.html">
+                            <h3>Rainydays 3 Layer Jacket Men</h3>
+                        </a>
+                        <h3 class="productblock-price">1602,-</h3>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         <div class="productsmen-contentformobile1">
-            <div class="productblock-picture">
-                <img src="images/productimages/productimage1.jpg" alt="Picture of Rainydays 3 Layer Jacket Men">
-                <div class="productblock-title">
-                    <a href="productspecificpage.html"><h3>Rainydays 3 Layer Jacket Men</h3></a>
-                    <h3 class="productblock-price">1602,-</h3>
+            <a href="productspecificpage.html">
+                <div class="productblock-picture">
+                    <img src="images/productimages/productimage1.jpg" alt="Picture of Rainydays 3 Layer Jacket Men">
+                    <div class="productblock-title">
+                        <a href="productspecificpage.html">
+                            <h3>Rainydays 3 Layer Jacket Men</h3>
+                        </a>
+                        <h3 class="productblock-price">1602,-</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="productblock-picture">
-                <img src="images/productimages/productimage2.jpg" alt="Picture of Rainydays Niyama Ski Jacket Men´s">
-                <div class="productblock-title">
-                    <a href="productspecificpage.html"><h3>Rainydays Niyama Ski Jacket Men´s</h3></a>
-                    <h3 class="productblock-price">839,-</h3>
+            </a>
+            <a href="productspecificpage.html">
+                <div class="productblock-picture">
+                    <img src="images/productimages/productimage2.jpg" alt="Picture of Rainydays Niyama Ski Jacket Men´s">
+                    <div class="productblock-title">
+                        <a href="productspecificpage.html">
+                            <h3>Rainydays Niyama Ski Jacket Men´s</h3>
+                        </a>
+                        <h3 class="productblock-price">839,-</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="productblock-picture">
-                <img src="images/productimages/productimage3.jpg" alt="Picture of Rainydays Niyama Ski Jacket Men´s">
-                <div class="productblock-title">
-                    <a href="productspecificpage.html"><h3>Rainydays Niyama Ski Jacket Men´s</h3></a>
-                    <h3 class="productblock-price">839,-</h3>
+            </a>
+            <a href="productspecificpage.html">
+                <div class="productblock-picture">
+                    <img src="images/productimages/productimage3.jpg" alt="Picture of Rainydays Niyama Ski Jacket Men´s">
+                    <div class="productblock-title">
+                        <a href="productspecificpage.html">
+                            <h3>Rainydays Niyama Ski Jacket Men´s</h3>
+                        </a>
+                        <h3 class="productblock-price">839,-</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="productblock-picture">
-                <img src="images/productimages/productimage4.jpg" alt="Picture of Rainydays 3 Layer Jacket Men">
-                <div class="productblock-title">
-                    <a href="productspecificpage.html"><h3>Rainydays 3 Layer Jacket Men</h3></a>
-                    <h3 class="productblock-price">1602,-</h3>
+            </a>
+            <a href="productspecificpage.html">
+                <div class="productblock-picture">
+                    <img src="images/productimages/productimage4.jpg" alt="Picture of Rainydays 3 Layer Jacket Men">
+                    <div class="productblock-title">
+                        <a href="productspecificpage.html">
+                            <h3>Rainydays 3 Layer Jacket Men</h3>
+                        </a>
+                        <h3 class="productblock-price">1602,-</h3>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         <div class="productsmen-contentblock8">
             <div class="arrow left"></div>

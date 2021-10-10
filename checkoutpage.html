@@ -46,26 +46,62 @@
             <h2>Your information</h2>
             <div class="checkout-selections-wrapper">
                 <div class="checkout-email checkout-selections">
+                    <div class="checkoutErrors emailError">
+                        <p>Please enter a valid e-mail adress!</p>
+                        <div class="errorTriangle">
+                            <p>!</p>
+                        </div>
+                    </div>
                     <label for="email" class="checkout-labels">E-mail adress</label>
                     <input type="email" id="email" size="30" required class="checkout-inputs">
                 </div>
                 <div class="checkout-phone checkout-selections">
+                    <div class="checkoutErrors phoneError">
+                        <p>Please enter a valid phone number! (minimum 8 digits) (country code not nescessary)</p>
+                        <div class="errorTriangle">
+                            <p>!</p>
+                        </div>
+                    </div>
                     <label for="phone" class="checkout-labels">Phone number</label>
                     <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required class="checkout-inputs">
                 </div>
                 <div class="checkout-name checkout-selections">
+                    <div class="checkoutErrors nameError">
+                        <p>Please enter your name!</p>
+                        <div class="errorTriangle">
+                            <p>!</p>
+                        </div>
+                    </div>
                     <label for="name" class="checkout-labels">Name</label>
                     <input type="text" id="name" name="name" required minlength="2" maxlength="30" size="20" class="checkout-inputs">
                 </div>
                 <div class="checkout-surname checkout-selections">
+                    <div class="checkoutErrors surnameError">
+                        <p>Please enter your surname!</p>
+                        <div class="errorTriangle">
+                            <p>!</p>
+                        </div>
+                    </div>
                     <label for="surname" class="checkout-labels">Surname</label>
                     <input type="text" id="surname" name="surname" required minlength="2" maxlength="30" size="20" class="checkout-inputs">
                 </div>
                 <div class="checkout-adress checkout-selections">
+                    <div class="checkoutErrors adressError">
+                        <p>Please enter your adress! (minimum 10 characters)</p>
+                        <div class="errorTriangle">
+                            <p>!</p>
+                        </div>
+                    </div>
                     <label for="adress" class="checkout-labels">Adress</label>
                     <input type="text" id="adress" name="adress" required minlength="2" maxlength="100" size="50" class="checkout-inputs">
                 </div>
                 <div class="checkout-city checkout-selections">
+                    <div class="checkoutErrors cityError">
+                        <p>Please enter your city!</p>
+                        <div class="errorTriangle">
+                            <p>!</p>
+                        </div>
+                    </div>
                     <label for="city" class="checkout-labels">City</label>
                     <input type="city" id="city" name="city" required minlength="2" maxlength="100" size="30" class="checkout-inputs">
                 </div>
@@ -79,6 +115,12 @@
                     </select>
                 </div>
                 <div class="checkout-postcode checkout-selections">
+                    <div class="checkoutErrors postcodeError">
+                        <p>Please enter your postcode! (minimum 4 digits)</p>
+                        <div class="errorTriangle">
+                            <p>!</p>
+                        </div>
+                    </div>
                     <label for="postcode" class="checkout-labels">Postcode</label>
                     <input type="postcode" id="postcode" name="postcode" min="0" max="99999" size="10" class="checkout-inputs">
                 </div>
@@ -89,6 +131,7 @@
             <div class="checkout-selections-wrapper">
                 <label for="delivery" class="checkout-labels">Free delivery by PostNord to</label>
                 <div class="checkout-delivery" id="delivery">
+                    <p class="deliveryLocAutofill"></p>
                 </div>
                 <div class="checkout-estimatedtime">
                     <p>Estimated delivery time: 3 - 5 business days.</p>
@@ -102,18 +145,36 @@
                     <div class="checkout-acceptedpayments">
                         <p>We currently only accept payments by card.</p>
                     </div>
+                    <div class="checkoutErrors creditcardNumberError">
+                        <p>Please enter a valid creditcard number!</p>
+                        <div class="errorTriangle">
+                            <p>!</p>
+                        </div>
+                    </div>
                     <label for="creditcard" class="checkout-labels">Card number</label>
                     <input type="creditcard" id="creditcard" name="creditcard" min="0" max="99999999999999999999999" size="50" class="checkout-inputs">
                 </div>
                 <div class="checkout-creditcard-date checkout-selections">
+                    <div class="checkoutErrors creditcardDateError">
+                        <p>Please select a creditcard expiration date!</p>
+                        <div class="errorTriangle">
+                            <p>!</p>
+                        </div>
+                    </div>
                     <label for="creditcard-date" class="checkout-labels">Month / Year</label>
-                    <input type="month" id="creditcard-date" name="creditcard-date" min="2018-03" value="2018-05" class="checkout-inputs">
+                    <input type="month" id="creditcard-date" name="creditcard-date" min="" value="" class="checkout-inputs creditcard-date-target">
                 </div>
                 <div class="checkout-creditcard-cvc checkout-selections">
+                    <div class="checkoutErrors creditcardCvcError">
+                        <p>Please fill out the CVC number! (3 digits)</p>
+                        <div class="errorTriangle">
+                            <p>!</p>
+                        </div>
+                    </div>
                     <label for="cvc" class="checkout-labels">CVC (?)</label>
                     <input type="number" id="cvc" name="cvc" min="0" max="9999" size="10" class="checkout-inputs">
                     <div>
-                        <p class="number-of-items">Number of items : 0</p>
+                        <p class="number-of-items">Number of items being purchased : 0</p>
                         <h2 class="total-price">Total: 0,-</h2>
                     </div>
                 </div>

@@ -1,6 +1,12 @@
 
 const shoppingCartItemNumberTargeter = document.querySelector(".cart-item-number");
 
-const cartItemGlobalNumber = JSON.parse(sessionStorage.getItem("sessionStorageCartItems"));
+if (sessionStorage.getItem("sessionStorageCartItems")) {
+    shoppingCartItemNumberTargeter.innerHTML = JSON.parse(sessionStorage.getItem("sessionStorageCartItems")).length;
+} else {
+    shoppingCartItemNumberTargeter.innerHTML = 0;
+}
 
-shoppingCartItemNumberTargeter.innerHTML = cartItemGlobalNumber.length;
+if (shoppingCartItemNumberTargeter.innerHTML == 0) {
+    shoppingCartItemNumberTargeter.innerHTML = "";
+}
