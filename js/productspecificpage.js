@@ -1,7 +1,60 @@
 const productPageCartItemNumberTargeter = document.querySelector(".cart-item-number");
 const addToCartButton = document.querySelector(".add-to-cart");
 const cartFeedbackMessage = document.querySelector(".cartFeedbackMessage");
+const productSpecificCurrent = document.querySelector(".productSpecificCurrent");
+const productSpecificH1 = document.querySelector(".productSpecificH1");
+const productSpecificH3 = document.querySelector(".productSpecificH3");
+const productSpecificPrice = document.querySelector(".productSpecificPrice");
+const productSpecificImg = document.querySelector(".productSpecificImg");
+const productSpecificPicturesOther = document.querySelector(".productSpecificPicturesOther");
+const productSpecificDescription = document.querySelector(".productSpecificDescription");
 
+
+const queryString = document.location.search;
+const parameters = new URLSearchParams(queryString);
+const productId = parameters.get("product_id");
+
+const productSpecificApiLink = `https://ehtoday.one/assignments/cmsCA/wp-json/wc/store/products/${productId}`;
+
+async function jacketSpecificApiCaller(inputAPI) {
+
+    try {
+
+        const firstProductSpecificCall = await fetch(inputAPI);
+        const firstProductSpecificResponse = await firstProductSpecificCall.json();
+
+        productSpecificCurrent.innerHTML = firstProductSpecificResponse.name;
+        productSpecificH1.innerHTML = firstProductSpecificResponse.name;
+        productSpecificH3.innerHTML = firstProductSpecificResponse.name;
+        productSpecificPrice.innerHTML = `${firstProductSpecificResponse.prices.price},-`;
+        productSpecificImg.innerHTML = `<img src="${firstProductSpecificResponse.images[0].src}" alt="Picture of the ${firstProductSpecificResponse.name}">`;
+        productSpecificPicturesOther.innerHTML = `
+            <div class="productspecificpage-section3-pictures">
+                <img src="${firstProductSpecificResponse.images[1].src}" alt="Picture of the Rainydays 3 Layer Shell Jacket Men">
+            </div>
+            <div class="productspecificpage-section3-pictures">
+                <img src="${firstProductSpecificResponse.images[2].src}" alt="Picture of the Rainydays 3 Layer Shell Jacket Men">
+            </div>
+            <div class="productspecificpage-section3-pictures">
+                <img src="${firstProductSpecificResponse.images[3].src}" alt="Picture of the Rainydays 3 Layer Shell Jacket Men">
+            </div>
+        `;
+        productSpecificDescription.innerHTML = `
+            <h3>More about ${firstProductSpecificResponse.name}</h3>
+            ${firstProductSpecificResponse.description}
+        `;
+
+        console.log(firstProductSpecificResponse);
+
+
+    } catch (error) {
+
+        console.log("error111");
+
+    }
+};
+
+jacketSpecificApiCaller(productSpecificApiLink);
 
 let cartItemNumberHolder = 0;
 let cartItems = [];

@@ -1,3 +1,7 @@
+:root {
+  --backgroundColour: white;
+}
+
 p {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
@@ -87,6 +91,7 @@ body {
   grid-template-rows: auto auto auto;
   grid-template-columns: auto auto auto auto auto;
   min-height: 100vh;
+  background-color: #eeeeee;
 }
 
 header {
@@ -98,7 +103,7 @@ header {
 
 .headerflexbox {
   display: flex;
-  background: #ffffff;
+  background: var(--backgroundColour);
   margin-left: 141px;
   padding-right: 0px;
   margin-right: 0px;
@@ -284,7 +289,7 @@ main {
   flex-direction: column;
   text-align: left;
   /*outline: solid rgb(234, 0, 255);*/
-  background: #ebebeb;
+  background: var(--backgroundColour);
   box-shadow: 0px 2px 6px #00000045;
 }
 
@@ -327,7 +332,7 @@ main {
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
-  background: #ebebeb;
+  background: var(--backgroundColour);
   box-shadow: 0px 2px 6px #00000045;
   /* outline: solid rgb(255, 102, 0); */
 }
@@ -345,7 +350,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ebebeb;
+  background: var(--backgroundColour);
   box-shadow: 0px 2px 6px #00000045;
   grid-row-start: 4;
   grid-row-end: 5;
@@ -366,7 +371,7 @@ main {
 
 .productblock-picture {
   flex: 1;
-  background: #ebebeb;
+  background: var(--backgroundColour);
   box-shadow: 0px 0px 5px 2px #00000038;
 }
 
@@ -579,7 +584,7 @@ h3.productblock-price {
   grid-column-end: 2;
   grid-row-start: 5;
   grid-row-end: 6;
-  background: #ebebeb;
+  background: var(--backgroundColour);
   box-shadow: 0px 2px 6px #00000045;
   padding: 1rem;
 }
@@ -625,7 +630,7 @@ h3.productblock-price {
   grid-column-end: 6;
   grid-row-start: 3;
   grid-row-end: 4;
-  background: #ebebeb;
+  background: var(--backgroundColour);
   box-shadow: 0px 2px 6px #00000045;
   justify-content: center;
 }
@@ -779,39 +784,13 @@ h3.productblock-price {
   font-weight: normal;
 }
 
-.productsmen-contentblock5 {
-  display: flex;
-  flex-direction: row;
-  column-gap: 1rem;
-  grid-column-start: 2;
-  grid-column-end: 6;
+.productPageProductsHolder {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
   grid-row-start: 4;
-  grid-row-end: 5;
-  /*outline: solid rgb(143, 60, 60);*/
-}
-
-.productsmen-contentblock6 {
-  display: flex;
-  flex-direction: row;
-  column-gap: 1rem;
-  grid-column-start: 2;
-  grid-column-end: 6;
-  grid-row-start: 7;
-  grid-row-end: 8;
-  margin-top: 2.25rem;
-  /*outline: solid rgb(143, 60, 60);*/
-}
-
-.productsmen-contentblock7 {
-  display: flex;
-  flex-direction: row;
-  column-gap: 1rem;
-  grid-column-start: 2;
-  grid-column-end: 6;
-  grid-row-start: 9;
   grid-row-end: 10;
-  margin-top: 2.25rem;
-  /*outline: solid rgb(143, 60, 60);*/
 }
 
 .productsmen-contentblock8 {
@@ -893,7 +872,7 @@ h3.productblock-price {
 .productspecificpage-section1 {
   display: flex;
   flex-direction: column;
-  background: #ebebeb;
+  background: var(--backgroundColour);
   box-shadow: 0px 2px 6px #00000045;
   padding: 2rem;
   grid-column-start: 4;
@@ -922,19 +901,28 @@ h3.productblock-price {
 }
 
 .productspecificpage-section2 {
+  display: flex;
+  justify-content: center;
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 6;
 }
 
+.productspecificpage-section2 img {
+  max-width: 800px;
+  box-shadow: 0px 2px 6px #00000045;
+}
+
 .productspecificpage-section3 {
   display: flex;
   flex-direction: row;
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 4;
   grid-row-start: 6;
   grid-row-end: 7;
+  margin-top: 2.25rem;
+  box-shadow: 0px 2px 6px #00000045;
 }
 
 .productspecificpage-section3-pictures {
@@ -951,7 +939,7 @@ h3.productblock-price {
   grid-column-end: 3;
   grid-row-start: 8;
   grid-row-end: 9;
-  background: #ebebeb;
+  background: var(--backgroundColour);
   box-shadow: 0px 2px 6px #00000045;
   padding: 1rem;
   margin-top: 2.25rem;
@@ -961,7 +949,7 @@ h3.productblock-price {
 .productspecificpage-section5 {
   display: flex;
   flex-direction: column;
-  background: #ebebeb;
+  background: var(--backgroundColour);
   box-shadow: 0px 2px 6px #00000045;
   grid-column-start: 3;
   grid-column-end: 4;
@@ -989,7 +977,7 @@ h3.productblock-price {
   margin-top: 2.25rem;
   display: flex;
   flex-direction: column;
-  background: #ebebeb;
+  background: var(--backgroundColour);
   box-shadow: 0px 2px 6px #00000045;
   padding: 1rem;
 }
@@ -1001,7 +989,7 @@ h3.productblock-price {
   grid-row-end: 11;
   display: flex;
   flex-direction: column;
-  background: #ebebeb;
+  background: var(--backgroundColour);
   box-shadow: 0px 2px 6px #00000045;
   padding: 1rem;
   margin-top: 2.25rem;
@@ -1203,7 +1191,7 @@ h3.productblock-price {
 
 .checkout-section1-producttitle,
 .checkout-section1-wrapper3 {
-  background: #ebebeb;
+  background: var(--backgroundColour);
   box-shadow: 0px 2px 6px #00000045;
   padding: 1rem;
   margin-bottom: 0.5rem;
@@ -1238,7 +1226,7 @@ h3.productblock-price {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  background: #ebebeb;
+  background: var(--backgroundColour);
   box-shadow: 0px 2px 6px #00000045;
   padding: 1rem;
 }
@@ -1257,7 +1245,7 @@ h3.productblock-price {
 }
 
 .checkout-inputs {
-  background: white;
+  background: #ebebeb;
   height: 1.5rem;
   border: 1px solid #2b2b2b3d;
 }
@@ -1293,7 +1281,7 @@ h3.productblock-price {
   justify-content: center;
   margin-top: 15rem;
   margin-bottom: 15rem;
-  background: #ebebeb;
+  background: var(--backgroundColour);
   box-shadow: 0px 2px 6px #00000045;
 }
 
