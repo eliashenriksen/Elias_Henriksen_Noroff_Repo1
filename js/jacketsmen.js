@@ -12,6 +12,9 @@ async function jackyJackets(inputAPI) {
 
         console.log(firstProductResponse);
 
+        productPageProductsHolder.innerHTML = "";
+        productPageProductsMobile.innerHTML = "";
+
         for (let i = 0; i < firstProductResponse.length; i++) {
 
             productPageProductsHolder.innerHTML += `

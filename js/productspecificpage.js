@@ -30,13 +30,13 @@ async function jacketSpecificApiCaller(inputAPI) {
         productSpecificImg.innerHTML = `<img src="${firstProductSpecificResponse.images[0].src}" alt="Picture of the ${firstProductSpecificResponse.name}">`;
         productSpecificPicturesOther.innerHTML = `
             <div class="productspecificpage-section3-pictures">
-                <img src="${firstProductSpecificResponse.images[1].src}" alt="Picture of the Rainydays 3 Layer Shell Jacket Men">
+                <img src="${firstProductSpecificResponse.images[1].src}" alt="Picture of the ${firstProductSpecificResponse.name}">
             </div>
             <div class="productspecificpage-section3-pictures">
-                <img src="${firstProductSpecificResponse.images[2].src}" alt="Picture of the Rainydays 3 Layer Shell Jacket Men">
+                <img src="${firstProductSpecificResponse.images[2].src}" alt="Picture of the ${firstProductSpecificResponse.name}">
             </div>
             <div class="productspecificpage-section3-pictures">
-                <img src="${firstProductSpecificResponse.images[3].src}" alt="Picture of the Rainydays 3 Layer Shell Jacket Men">
+                <img src="${firstProductSpecificResponse.images[3].src}" alt="Picture of the ${firstProductSpecificResponse.name}">
             </div>
         `;
         productSpecificDescription.innerHTML = `

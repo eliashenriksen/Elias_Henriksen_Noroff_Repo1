@@ -100,6 +100,38 @@ ul {
   font-weight: bold;
 }
 
+.loaderSpinnyBody {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: var(--backgroundColour);
+  box-shadow: 0px 2px 6px #00000045;
+  border-radius: 50%;
+  animation: loaderSpin 1s ease-in-out infinite;
+}
+
+.loaderSpinnyBall1,
+.loaderSpinnyBall2 {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-color: #0c326a;
+  border-radius: 50%;
+  box-shadow: 0px 2px 6px #00000045;
+}
+
+.loaderSpinnyBall1 {
+  top: 25%;
+  left: 25%;
+}
+
+.loaderSpinnyBall2 {
+  bottom: 25%;
+  right: 25%;
+}
+
 body {
   display: grid;
   gap: 0;
@@ -1684,5 +1716,11 @@ footer h4 {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@keyframes loaderSpin {
+  100% {
+    transform: rotate(360deg);
   }
 }
