@@ -10,35 +10,33 @@ async function jackyJackets(inputAPI) {
         const firstProductCall = await fetch(inputAPI);
         const firstProductResponse = await firstProductCall.json();
 
-        console.log(firstProductResponse);
-
         productPageProductsHolder.innerHTML = "";
         productPageProductsMobile.innerHTML = "";
 
         for (let i = 0; i < firstProductResponse.length; i++) {
 
             productPageProductsHolder.innerHTML += `
-            <div class="productblock-picture hidden">
-                <img src="${firstProductResponse[i].images[0].src}" alt="Picture of ${firstProductResponse[i].name}" href="index.html">
-                <div class="productblock-title hidden">
-                    <a href="productspecificpage.html?product_id=${firstProductResponse[i].id}">
+            <a href="productspecificpage.html?product_id=${firstProductResponse[i].id}" class="productblock-picture hidden">
+                <div">
+                    <img src="${firstProductResponse[i].images[0].src}" alt="picture of ${firstProductResponse[i].name}">
+                    <div class="productblock-title hidden">
                         <h3>${firstProductResponse[i].name}</h3>
-                    </a>
-                    <h3 class="productblock-price">${firstProductResponse[i].prices.price},-</h3>
+                        <h3 class="productblock-price">${firstProductResponse[i].prices.price},-</h3>
+                    </div>
                 </div>
-            </div>
+            </a>
             `;
 
             productPageProductsMobile.innerHTML += `
-            <div class="productblock-picture">
-                <img src="${firstProductResponse[i].images[0].src}" alt="Picture of ${firstProductResponse[i].name}" href="index.html">
-                <div class="productblock-title">
-                    <a href="productspecificpage.html?product_id=${firstProductResponse[i].id}">
+            <a href="productspecificpage.html?product_id=${firstProductResponse[i].id}" class="productblock-picture">
+                <div">
+                    <img src="${firstProductResponse[i].images[0].src}" alt="picture of ${firstProductResponse[i].name}">
+                    <div class="productblock-title">
                         <h3>${firstProductResponse[i].name}</h3>
-                    </a>
-                    <h3 class="productblock-price">${firstProductResponse[i].prices.price},-</h3>
+                        <h3 class="productblock-price">${firstProductResponse[i].prices.price},-</h3>
+                    </div>
                 </div>
-            </div>
+            </a>
             `;
         }
 
