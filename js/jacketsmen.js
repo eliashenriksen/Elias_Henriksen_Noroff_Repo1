@@ -10,12 +10,13 @@ async function jackyJackets(inputAPI) {
         const firstProductCall = await fetch(inputAPI);
         const firstProductResponse = await firstProductCall.json();
 
+        console.log(firstProductResponse);
+
         for (let i = 0; i < firstProductResponse.length; i++) {
-            console.log(firstProductResponse[i]);
 
             productPageProductsHolder.innerHTML += `
             <div class="productblock-picture hidden">
-                <img src="${firstProductResponse[i].images[0].src}" alt="Picture of Rainydays 3 Layer Jacket Men" href="index.html">
+                <img src="${firstProductResponse[i].images[0].src}" alt="Picture of ${firstProductResponse[i].name}" href="index.html">
                 <div class="productblock-title hidden">
                     <a href="productspecificpage.html?product_id=${firstProductResponse[i].id}">
                         <h3>${firstProductResponse[i].name}</h3>
@@ -27,7 +28,7 @@ async function jackyJackets(inputAPI) {
 
             productPageProductsMobile.innerHTML += `
             <div class="productblock-picture">
-                <img src="${firstProductResponse[i].images[0].src}" alt="Picture of Rainydays 3 Layer Jacket Men" href="index.html">
+                <img src="${firstProductResponse[i].images[0].src}" alt="Picture of ${firstProductResponse[i].name}" href="index.html">
                 <div class="productblock-title">
                     <a href="productspecificpage.html?product_id=${firstProductResponse[i].id}">
                         <h3>${firstProductResponse[i].name}</h3>
@@ -36,8 +37,6 @@ async function jackyJackets(inputAPI) {
                 </div>
             </div>
             `;
-
-            console.log(firstProductResponse[i].name);
         }
 
     } catch (error) {
