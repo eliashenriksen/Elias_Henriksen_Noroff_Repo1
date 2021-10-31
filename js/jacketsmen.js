@@ -41,13 +41,10 @@ async function jackyJackets(inputAPI) {
         }
 
     } catch (error) {
-        console.log("errrororrrr");
-        productPageProductsHolder.innerHTML = `placeholder error message`;
-        productPageProductsMobile.innerHTML = `placeholder error message`;
+        productPageProductsHolder.innerHTML = `<div class="errorMessage1"><p>There was an error fetching the product list. Please try again. If the problem persists please contact support.</p></div>`;
+        productPageProductsMobile.innerHTML = `<div class="errorMessage1"><p>There was an error fetching the product list. Please try again. If the problem persists please contact support.</p></div>`;
     }
 
 };
-
-console.log("dog");
 
 jackyJackets(apiLink);

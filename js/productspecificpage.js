@@ -50,6 +50,7 @@ async function jacketSpecificApiCaller(inputAPI) {
     } catch (error) {
 
         console.log("error111");
+        productSpecificImg.innerHTML = `<div class="errorMessage1"><p>There was an error fetching the product information. Please try again. If the problem persists please contact support.</p></div>`;
 
     }
 };
