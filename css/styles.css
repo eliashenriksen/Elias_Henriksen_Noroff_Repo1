@@ -91,7 +91,7 @@ ul {
   top: 50%;
   margin: 2rem;
   padding: 2rem;
-  background-color: var(--backgroundColour);
+  background-color: white;
   box-shadow: 0px 2px 6px #00000045;
 }
 
@@ -150,8 +150,8 @@ header {
 
 .headerflexbox {
   display: flex;
-  background: var(--backgroundColour);
-  margin-left: 141px;
+  background: #0c326a;
+  margin-left: 140px;
   padding-right: 0px;
   margin-right: 0px;
   margin-top: 2rem;
@@ -200,13 +200,13 @@ nav li {
 }
 
 nav li:hover {
-  background: #0c326a;
+  background: white;
   box-shadow: inset 0px 2px 6px #00000029;
   outline: solid 1px #0c326a;
 }
 
 nav li:hover a {
-  color: #ffffff;
+  color: #0c326a;
   text-shadow: 0px 2px 6px #00000029;
 }
 
@@ -214,12 +214,11 @@ nav a {
   display: block;
   padding: 21px 48px 21px 48px;
   font-family: "Rubik", sans-serif;
-  color: #2b2b2b;
+  color: white;
   /*outline: solid red;*/
 }
 
 .nav-icons-rightside {
-  color: #2b2b2b;
   font-size: 27px;
   padding-right: 88px;
   padding-left: 27px;
@@ -241,6 +240,7 @@ nav a {
 
 .flaticon-avatar,
 .flaticon-shopping-cart {
+  color: white;
   padding: 10px;
   position: relative;
 }
@@ -257,7 +257,7 @@ nav a {
   margin: 0px;
   height: 31px;
   border-radius: 4px;
-  background: rgba(43, 43, 43, 0.16);
+  background: rgba(255, 255, 255, 0.16);
   /*outline: solid rgb(0, 255, 0);*/
   position: relative;
   flex: 3;
@@ -272,13 +272,17 @@ nav a {
   flex: 9;
 }
 
+.searchbox-input::placeholder {
+  color: white;
+}
+
 .flaticon-search {
   flex: 1;
   font-size: 1.2rem;
   line-height: 1.2rem;
   padding-right: 10px;
   cursor: pointer;
-  color: rgba(43, 43, 43, 0.7);
+  color: white;
 }
 
 input.searchbox-input:focus {
@@ -537,6 +541,7 @@ h3.productblock-price {
 }
 
 .homepage-content4-part3ofx {
+  max-width: 500px;
   grid-column-start: 3;
   grid-column-end: 6;
   grid-row-start: 8;
@@ -899,7 +904,7 @@ h3.productblock-price {
   box-shadow: 0px 2px 6px #00000045;
   justify-content: center;
   align-items: center;
-  background-color: #ebebeb;
+  background-color: white;
   position: fixed;
   width: 200px;
   height: 100px;
@@ -1410,7 +1415,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #2b2b2b;
+  background: #0c326a;
   box-shadow: 0px -2px 6px #00000045;
   height: 400px;
   /* outline: solid red; */
